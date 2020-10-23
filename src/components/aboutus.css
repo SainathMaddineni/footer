@@ -1,0 +1,38 @@
+h2 {
+  text-align: center;
+  padding: 15px;
+  margin: auto;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background: -moz-linear-gradient(#648880, #293f50);
+  background: linear-gradient(#648880, #293f50);
+}
+fieldset {
+  border: none;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background: -moz-linear-gradient(#648880, #293f50);
+  background: linear-gradient(#648880, #293f50);
+}
+.ceo-image {
+  float: left;
+}
+.ceo-image img {
+  width: 550px;
+  border-radius: 10px;
+  border: 2px solid orangered;
+}
+.cofounder-image {
+  float: right;
+}
+.cofounder-image img {
+  width: 580px;
+  height: 363px;
+  border-radius: 10px;
+  border: 2px solid orangered;
+}
+figcaption {
+  font-family: "Syne Mono", monospace;
+  text-align: center;
+  color: whitesmoke;
+}
