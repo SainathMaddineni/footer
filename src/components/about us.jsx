@@ -11,22 +11,44 @@ class AboutUs extends Component {
         </div>
         <div>
           <fieldset>
-            <figure className="ceo-image">
-              <img src="/images/img.jpg" alt="image not found" />
-              <figcaption>
-                Founder&CEO
-                <br />
-                <p>Founder and CEO of the company slope rate tech </p>
-              </figcaption>
-            </figure>
-            <figure className="cofounder-image">
-              <img src="/images/img1.jpg" alt="image not found" />
-              <figcaption>
-                CoFounder
-                <br />
-                <p>CoFounder of the company sloper rate tech </p>
-              </figcaption>
-            </figure>
+            <div className="ceo">
+              <p>Founder&CEO</p>
+              <img src="/images/img.jpg" width="400" height="400" alt="ceo" />
+              <div className="ceo-fadedbox">
+                <div className="title text">
+                  Founder and CEO of slope rate tech Animated Text Over a Faded
+                  Image on Hover Animated Text Over a Faded Image on Hover
+                  Animated Text Over a Faded Image on Hover Animated Text Over a
+                  Faded Image on Hover Animated Text Over a Faded Image on Hover
+                </div>
+              </div>
+            </div>
+            <div className="cofounder">
+              <p>Co-Founder</p>
+              <img
+                src="/images/img1.jpg"
+                width="400"
+                height="400"
+                alt="cofounder"
+              />
+              <div className="co-fadedbox">
+                <div className="title text">
+                  CoFounder of slope rate tech Animated Text Over a Faded Image
+                  on Hover Animated Text Over a Faded Image on Hover Animated
+                  Text Over a Faded Image on Hover Animated Text Over a Faded
+                  Image on Hover Animated Text Over a Faded Image on Hover
+                </div>
+              </div>
+            </div>
+            <div className="company-text">
+              <p>
+                This paragraph is regarding about company you will know
+                everything from here This paragraph is regarding about company
+                you will know everything from here This paragraph is regarding
+                about company you will know everything from here This paragraph
+                is regarding about company you will know everything from here
+              </p>
+            </div>
           </fieldset>
         </div>
       </React.Fragment>
