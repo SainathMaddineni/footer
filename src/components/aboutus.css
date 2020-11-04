@@ -1,0 +1,126 @@
+h2 {
+  text-align: center;
+  padding: 15px;
+  margin: auto;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background: -moz-linear-gradient(#648880, #293f50);
+  background: linear-gradient(#648880, #293f50);
+}
+fieldset {
+  border: none;
+  font-family: "Vampiro One", cursive;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background: -moz-linear-gradient(#648880, #293f50);
+  background: linear-gradient(#648880, #293f50);
+}
+.ceo {
+  cursor: pointer;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  text-align: center;
+  float: left;
+  padding-left: 50px;
+  color: whitesmoke;
+}
+.ceo .ceo-fadedbox {
+  background-color: #666666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 360px;
+  height: 100px;
+  padding: 180px 20px;
+  margin-left: 50px;
+  margin-top: 53px;
+}
+.ceo:hover .ceo-fadedbox {
+  opacity: 0.8;
+}
+.ceo .text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+.ceo .title {
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+.ceo:hover .title,
+.ceo:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.cofounder {
+  cursor: pointer;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  text-align: center;
+  float: right;
+  padding-right: 50px;
+  color: whitesmoke;
+}
+.cofounder .co-fadedbox {
+  background-color: #666666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 360px;
+  height: 100px;
+  padding: 180px 20px;
+  margin-top: 22px;
+  margin-top: 53px;
+}
+.cofounder:hover .co-fadedbox {
+  opacity: 0.8;
+}
+.cofounder .text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+.cofounder .title {
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+.cofounder:hover .title,
+.cofounder:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+.company-text {
+  text-align: center;
+  margin-top: 420px;
+}
