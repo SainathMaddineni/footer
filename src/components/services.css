@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  background-color: lightblue;
+}
+.row {
+  margin-top: 30px;
+  text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.services-box1 {
+  width: 33.33%;
+  padding-left: 75px;
+  float: left;
+}
+.services-box2 {
+  width: 33.33%;
+  float: left;
+}
+.services-box3 {
+  width: 33.33%;
+  float: left;
+}
+.fa fa-file-code-o {
+  font-size: 48px;
+  color: red;
+}
+#toggle {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 25px;
+  margin-left: -15px;
+}
+
+#toggle:checked ~ dialog {
+  display: block;
+}
+#togglem {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 25px;
+  margin-left: -15px;
+}
+
+#togglem:checked ~ dialog {
+  display: block;
+}
+#togglea {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 25px;
+  margin-left: -15px;
+}
+
+#togglea:checked ~ dialog {
+  display: block;
+}
+#togglei {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 25px;
+  margin-left: -15px;
+}
+
+#togglei:checked ~ dialog {
+  display: inline-block;
+  margin-top: -160px;
+}
+#toggleb {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 25px;
+  margin-left: -15px;
+}
+
+#toggleb:checked ~ dialog {
+  display: inline-block;
+  margin-top: -160px;
+}
+#toggleo {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 25px;
+  margin-left: -15px;
+}
+
+#toggleo:checked ~ dialog {
+  display: inline-block;
+  margin-top: -160px;
+}
+label {
+  background: green;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+dialog {
+  animation: appear 350ms ease-in 1;
+  max-width: 500px;
+}
