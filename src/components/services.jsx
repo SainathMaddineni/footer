@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import Model from "./Model";
 import "./services.css";
 
 class Services extends Component {
   state = {};
   render() {
     return (
-      <div className="box">
+      <div className="servicebox">
         <div className="serives">
           <h2>Our Services</h2>
         </div>

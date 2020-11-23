@@ -1,4 +1,4 @@
-h2 {
+.aboutus h2 {
   text-align: center;
   padding: 15px;
   margin: auto;
@@ -7,7 +7,7 @@ h2 {
   background: -moz-linear-gradient(#648880, #293f50);
   background: linear-gradient(#648880, #293f50);
 }
-fieldset {
+.aboutus fieldset {
   border: none;
   font-family: "Vampiro One", cursive;
   background: #466368;

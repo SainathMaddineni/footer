@@ -7,6 +7,7 @@ class AboutUs extends Component {
     return (
       <React.Fragment>
         <div>
+          <div className = "aboutus">
           <h2>About us</h2>
         </div>
         <div>
@@ -50,6 +51,7 @@ class AboutUs extends Component {
               </p>
             </div>
           </fieldset>
+          </div>
         </div>
       </React.Fragment>
     );

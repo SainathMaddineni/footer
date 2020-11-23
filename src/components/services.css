@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.box {
+.servicebox {
   background-color: lightblue;
 }
 .row {
@@ -50,7 +50,15 @@
   margin-bottom: 25px;
   margin-left: -15px;
 }
-
+.servicebox h2{
+  text-align: center;
+  padding: 15px;
+  margin: auto;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background: -moz-linear-gradient(#648880, #293f50);
+  background: linear-gradient(#648880, #293f50);
+}
 #togglem:checked ~ dialog {
   display: block;
 }
@@ -105,7 +113,7 @@
   display: inline-block;
   margin-top: -160px;
 }
-label {
+.servicebox label {
   background: green;
   color: white;
   padding: 0.5em 1em;
