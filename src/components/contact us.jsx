@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
 import './contactus.css';
+
 class ContactUs extends Component {
     state = {  }
+
+     sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_3msx1cy', 'template_umaz3ui', e.target, 'user_YlA2tOwXskWS8BV0IGhCI')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+        }
     render() { 
         return ( 
             <div>
@@ -16,31 +30,33 @@ class ContactUs extends Component {
             <div className = "contactadj">
                     <div className = "contactform">
                     <h2>Send a Message</h2>
+                    <form onSubmit = {this.sendEmail}>
                   <div className = "formBox">
                       <div className = "inputBox w50">
-                          <input type = "text" name = "" required/>
+                          <input type = "text" name = "firstname" required/>
                           <span>First Name </span>
                       </div>
                       <div className = "inputBox w50">
-                        <input type = "text" name = "" required/>
+                        <input type = "text" name = "lastname" required/>
                         <span>Last Name </span>
                     </div>
                     <div className = "inputBox w50">
-                        <input type = "text" name = "" required/>
+                        <input type = "text" name = "email" required/>
                         <span>Email Address </span>
                     </div>
                     <div className = "inputBox w50">
-                        <input type = "text" name = "" required/>
+                        <input type = "text" name = "phonenumber" required/>
                         <span>Mobile Number </span>
                     </div>
                     <div className = "inputBox w100">
-                        <textarea name = "" required></textarea>
+                        <textarea name = "message" required></textarea>
                         <span>Write Your Message Here..... </span>
                     </div>
                     <div className = "inputBox w100">
                         <input type = "submit" value = "send"/>
                     </div>
             </div>
+            </form>
             </div>
                 </div>
                 <div className = "locbox">

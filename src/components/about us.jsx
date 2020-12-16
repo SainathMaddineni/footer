@@ -11,9 +11,9 @@ class AboutUs extends Component {
           <h2>About us</h2>
         </div>
         <div>
-          <fieldset>
+          <fieldset className = "fieldbox">
             <div className="ceo">
-              <p>Founder&CEO</p>
+              <p className = "paragraph">Founder&CEO</p>
               <img src="/images/img.jpg" width="400" height="400" alt="ceo" />
               <div className="ceo-fadedbox">
                 <div className="title text">
@@ -25,10 +25,10 @@ class AboutUs extends Component {
               </div>
             </div>
             <div className="cofounder">
-              <p>Co-Founder</p>
+              <p className = "paragraph">Co-Founder</p>
               <img
                 src="/images/img1.jpg"
-                width="400"
+                width="360"
                 height="400"
                 alt="cofounder"
               />

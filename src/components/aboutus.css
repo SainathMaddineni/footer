@@ -7,7 +7,8 @@
   background: -moz-linear-gradient(#648880, #293f50);
   background: linear-gradient(#648880, #293f50);
 }
-.aboutus fieldset {
+
+.fieldbox {
   border: none;
   font-family: "Vampiro One", cursive;
   background: #466368;
@@ -123,4 +124,8 @@
 .company-text {
   text-align: center;
   margin-top: 420px;
+}
+.paragraph{
+  font-size: 25px;
+  font-weight: bolder;
 }
