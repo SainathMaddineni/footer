@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './signup.css';
-import {Route,Redirect} from 'react-router-dom'
+import SignupAccount from '../services/signup_service';
 
 
 
@@ -137,72 +137,90 @@ class SignUp extends Component {
             event.preventDefault();
             const isValid = this.validate();
             if (isValid){
-                this.setState(initialState);
-                this.props.history.push("/login");
+                let signUp = {firstName : this.state.firstname,
+                    lastName : this.state.lastname,
+                    mobileNumber :this.state.contactnumber,
+                    emailAddress : this.state.mail,
+                    password : this.state.password,
+                    address : {
+                        streetAddress: this.state.street,
+                        city :this.state.city,
+                        state : this.state.state,
+                        zipCode : this.state.zipcode,
+                        country : this.state.country}}; 
+                    console.log('signup =>'+JSON.stringify(signUp));
+                    SignupAccount.createAccount(signUp).then(res =>{
+                        console.log(res)
+                        this.props.history.push("/login");
+                    })
+                    .catch(error =>{ 
+                        console.log(error.data);
+                    })
+                    this.setState(initialState);
         }
     } 
     render() { 
         return (
             <div>
-                <div class = "box2">
-                    <div class = "container5">
+                <div className = "box2">
+                    <div className = "container5">
                         <h1>SIGNUP HERE</h1>
                     <form >
                     <fieldset >
                     <br></br><br></br>
                     <div>
-                    <label for="fname">FirstName:</label>
+                    <label htmlFor="fname">FirstName:</label>
                     <input type="text" onChange = {(event) => this.handlefirstName(event)} 
                     value ={this.state.firstname} id="fname" name="fname" required/>
-                    <label for="lname" class="left">LastName:</label>
+                    <label htmlFor="lname" className="left">LastName:</label>
                     <input type="text" onChange = {(event) => this.handlelastName(event)} 
                         value ={this.state.lastname}id="lname" name="lname"required/>
                         <div className = "leftnameerr">{this.state.firstnameError}</div>
                         <div className = "rightnameerr">{this.state.lastnameError}</div>
                         <br></br><br></br>
-                    <label for="str">Street:</label>
+                    <label htmlFor="str">Street:</label>
                     <input type="text" onChange = {(event) => this.handlestreet(event)} 
                         value ={this.state.street} id="str" name="Street" required/>
-                    <label for="cty" class="left">City             :</label>
+                    <label htmlFor="cty" className ="left">City             :</label>
                     <input type="text"  onChange = {(event) => this.handlecity(event)} 
                         value ={this.state.city}id="cty" name="city" required />
                     <div className = "leftnameerr">{this.state.streetError}</div>
                     <div className = "rightnameerr">{this.state.cityError}</div>
                     <br></br><br></br>
-                    <label for="state">State  :</label>
+                    <label htmlFor="state">State  :</label>
                     <input type="text"   onChange = {(event) => this.handlestate(event)} 
                         value ={this.state.state}id="state" name="state" required/>
-                    <label for="zc" class="left">ZipCode:</label>
+                    <label htmlFor="zc" className ="left">ZipCode:</label>
                     <input type="number" onChange = {(event) => this.handlezipcode(event)} 
                     value ={this.state.zipcode}id="zc" name="zipcode" required/>
                     <div className = "leftnameerr">{this.state.stateError}</div>
                     <div className = "rightnameerr">{this.state.zipcodeError}</div>
                     <br></br><br></br>
-                    <label for="cntry">Country  :</label>
+                    <label htmlFor="cntry">Country  :</label>
                     <select name="country" value = {this.state.country} onChange = {(event) => this.handlecountry(event)} id="cntry">
-                        <option selected value="india">INDIA</option>
-                        <option value="usa">USA</option>
+                        <option defaultValue ="usa">USA</option>
+                        <option value="india">INDIA</option>
                         <option value="australia">AUSTRALIA</option>
                         <option value="canada">CANADA</option>
                     </select><br></br><br></br>
-                    <label for="pw">Password:</label>
+                    <label htmlFor="pw">Password:</label>
                     <input type="password" id="pw" onChange = {(event) => this.handlepassword(event)}
                          value = {this.state.password}name="password" required/>
                          <div className = "specialnameerr">{this.state.passwordError}</div>
                          <br></br><br></br>
-                    <label for="pw">Confirm Password:</label>
+                    <label htmlFor="pw">Confirm Password:</label>
                     <input type="password" onChange = {(event) => this.handleconfirmpassword(event)} 
                     value = {this.state.confirmpassword} id="cpw" name="password" required/>
                     <div className = "specialnameerr">{this.state.confirmpasswordError}</div>
                     <br></br><br></br>
-                    <label for="ml">Email:</label>
+                    <label htmlFor="ml">Email:</label>
                     <input type="email" onChange = {(event) => this.handleEmail(event)} 
                     value = {this.state.email} id="ml" name="email" required/>
                     <div className = "specialnameerr">{this.state.emailError}</div>
                     <br></br><br></br>
-                    <label for="ph">Phone  :</label>
+                    <label htmlFor="ph">Phone  :</label>
                     <select name="country" id="ph">
-                        <option selected value="+91">+91</option>
+                        <option defaultValue="+91">+91</option>
                         <option value="+1">+1</option>
                         <option value="+61">+61</option>
                         <option value="+1">+1</option>
@@ -210,7 +228,7 @@ class SignUp extends Component {
                     <input type ="phone" onChange = {(event) => this.handlenumber(event)} 
                         value = {this.state.contactnumber} id="phone" name="phone" required/>
                         <div className = "specialnameerr">{this.state.phonenumberError}</div>
-                    <button class="button1" vlaue = "Next" 
+                    <button className="button1" vlaue = "Next" 
                         onClick={this.handleSubmit}  ><span>submit</span></button>
                     </div>
                     <br></br>
@@ -218,10 +236,10 @@ class SignUp extends Component {
                 </form>
                     </div>
                     </div>
-                <div class = "box1">
-                    <img  class = "image1" src="/images/emp.png"  alt = "img not found"/>
+                <div className = "box1">
+                    <img  className = "image1" src="/images/emp.png"  alt = "img not found"/>
                 </div>
-                <div class = "footercss">
+                <div className = "footercss">
                 <footer>
                     <p>SlopeRateTech,Copyright&copy;2020</p>
                 </footer>

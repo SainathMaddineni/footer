@@ -66,10 +66,10 @@ class ContactUs extends Component {
                     <div  className = "lctncomBox">
                         <img src = "/images/emailnew.png" className = "contactimg" alt = "img not found"/>
                         <h2>Email Address</h2>
-                        <p>ourcompany@sloperateinc.com</p>
+                        <p>admin@sloperateinc.com</p>
                         <div className = "fax">
                         <h3>Fax</h3>
-                        <h5>123456789</h5>
+                        <h5>*******</h5>
                         </div>
                     </div>
                     </div>
@@ -77,21 +77,21 @@ class ContactUs extends Component {
                     <div  className = "lctncomBox">
                         <img src = "/images/phonenew.png" className = "contactimg" alt = "img not found"/>
                         <h2>Mobile INDIA</h2>
-                        <p>+91 123456789</p>
+                        <p>+91 9676337065</p>
                         <div className = "fax">
                         <h3>Mobile Overseas</h3>
-                        <h5>+61 2356987</h5>
+                        <h5>+1(502)654-2695</h5>
                         </div>
                     </div>
                     </div>
                     <div className = "phonecon">
                     <div  className = "lctncomBox">
                         <img src = "/images/locationnew.png"className = "contactimg" alt = "img not found"/>
-                        <h2>Address India</h2>
-                        <p>Address here.....</p>
+                        <h2>Address</h2>
+                        <p>SLOPE RATE TECHNO PRIVATE LIMITED
+                            CAF Road,Patamatalanka, Benz Circle
+                            Vijayawada, Andhra Pradesh, India - 520010</p>
                         <div className = "fax">
-                        <h3>Address Overseas</h3>
-                        <h5>Address here....</h5>
                         </div>
                     </div>
                     </div>

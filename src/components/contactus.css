@@ -166,11 +166,11 @@
   .lctncomBox:hover{
       height:470px;
       width:320px;
-      transition: 0.5s;
+      transition: 0.8s;
   }
   .locbox:hover{
       border-radius:1000px;
-      transition: 0.5s;
+      transition: 0.8s;
   }
 
 
