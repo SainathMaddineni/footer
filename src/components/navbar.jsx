@@ -14,12 +14,12 @@ class NavBar extends Component {
                             </div>
                         <nav>
                             <ul>
-                                <Link to = "/signup"><a>SIGNUP</a></Link>
-                                <Link to = "/login"><a>LOGIN</a></Link>
-                                <Link to = "/contactus"><a>CONTACT US</a></Link>
-                                <Link to = "/aboutus"><a>ABOUT US</a></Link>
-                                <Link to = "/services"><a>SERVICES</a></Link>
-                                <Link to = "/home"><a>HOME</a></Link>
+                                <Link to = "/signup">SIGNUP</Link>
+                                <Link to = "/login">LOGIN</Link>
+                                <Link to = "/contactus">CONTACT US</Link>
+                                <Link to = "/aboutus">ABOUT US</Link>
+                                <Link to = "/services">SERVICES</Link>
+                                <Link to = "/home">HOME</Link>
                             </ul>
                         </nav>
                         </div>

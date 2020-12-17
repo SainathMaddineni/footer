@@ -8,7 +8,7 @@ const mobileRe = new RegExp(/^[0-9]{10}$/);
 const zipcodeRe = new RegExp(/^[0-9]{6}$/);
 const StringRe = new RegExp(/^[a-zA-Z]+$/);
 const passwordRe = new RegExp(/^[0-9]{8,25}$/);
-const emailRe = new RegExp(/^[\w-\+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
+const emailRe = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
 
 const initialState = {
     firstname :"",

@@ -11,7 +11,7 @@ class Services extends Component {
         </div>
         <div className="row">
           <div className="services-box1">
-            <img src="./images/web-development.png" width="70" height="60" />
+            <img src="./images/web-development.png" alt =  "img not found" width="70" height="60" />
             <h3>Web Developement</h3>
             <input type="checkbox" id="toggle" />
             <label for="toggle">Load More</label>
@@ -23,7 +23,7 @@ class Services extends Component {
             </dialog>
           </div>
           <div className="services-box2">
-            <img src="./images/mobile.png" width="70" height="60" />
+            <img src="./images/mobile.png" alt =  "img not found" width="70" height="60" />
             <h3>Mobile Developement(Android/IOS)</h3>
             <input type="checkbox" id="togglem" />
             <label for="togglem">Load More</label>
@@ -35,7 +35,7 @@ class Services extends Component {
             </dialog>
           </div>
           <div className="services-box3">
-            <img src="./images/analytics.png" width="60" height="50" />
+            <img src="./images/analytics.png" alt =  "img not found" width="60" height="50" />
             <h3>Analytics Design</h3>
             <input type="checkbox" id="togglea" />
             <label for="togglea">Load More</label>
@@ -50,7 +50,7 @@ class Services extends Component {
 
         <div className="row">
           <div className="services-box1">
-            <img src="./images/innovation.png" width="70" height="60" />
+            <img src="./images/innovation.png" alt =  "img not found" width="70" height="60" />
             <h3>Artificial Innovation</h3>
             <input type="checkbox" id="togglei" />
             <label for="togglei">Load More</label>
@@ -62,7 +62,7 @@ class Services extends Component {
             </dialog>
           </div>
           <div className="services-box2">
-            <img src="./images/design.png" width="70" height="60" />
+            <img src="./images/design.png" alt =  "img not found" width="70" height="60" />
             <h3>Business Design</h3>
             <input type="checkbox" id="toggleb" />
             <label for="toggleb">Load More</label>
@@ -74,7 +74,7 @@ class Services extends Component {
             </dialog>
           </div>
           <div className="services-box3">
-            <img src="./images/service.svg" width="60" height="50" />
+            <img src="./images/service.svg" alt =  "img not found" width="60" height="50" />
             <h3>Other Services</h3>
             <input type="checkbox" id="toggleo" />
             <label for="toggleo">Load More</label>
