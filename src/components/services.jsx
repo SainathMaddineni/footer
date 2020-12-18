@@ -75,7 +75,7 @@ class Services extends Component {
           </div>
           <div className="services-box3">
             <img src="./images/service.svg" alt =  "img not found" width="60" height="50" />
-            <h3>Other Services</h3>
+            <h3>Other Services/Educational Services</h3>
             <input type="checkbox" id="toggleo" />
             <label for="toggleo">Load More</label>
 

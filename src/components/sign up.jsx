@@ -149,8 +149,8 @@ class SignUp extends Component {
                         zipCode : this.state.zipcode,
                         country : this.state.country}}; 
                     console.log('signup =>'+JSON.stringify(signUp));
-                    SignupAccount.createAccount(signUp).then(res =>{
-                        console.log(res)
+                    SignupAccount.createAccount(signUp).then(response =>{
+                        console.log(response)
                         this.props.history.push("/login");
                     })
                     .catch(error =>{ 
