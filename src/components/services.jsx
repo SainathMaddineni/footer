@@ -14,36 +14,36 @@ class Services extends Component {
             <img src="./images/web-development.png" alt =  "img not found" width="70" height="60" />
             <h3>Web Developement</h3>
             <input type="checkbox" id="toggle" />
-            <label for="toggle">Load More</label>
+            <label htmlFor="toggle">Load More</label>
 
             <dialog>
               <p>web developement</p>
 
-              <label for="toggle">close</label>
+              <label htmlFor="toggle">close</label>
             </dialog>
           </div>
           <div className="services-box2">
             <img src="./images/mobile.png" alt =  "img not found" width="70" height="60" />
             <h3>Mobile Developement(Android/IOS)</h3>
             <input type="checkbox" id="togglem" />
-            <label for="togglem">Load More</label>
+            <label htmlFor="togglem">Load More</label>
 
             <dialog>
               <p>Mobile Developement</p>
 
-              <label for="togglem">close</label>
+              <label htmlFor="togglem">close</label>
             </dialog>
           </div>
           <div className="services-box3">
             <img src="./images/analytics.png" alt =  "img not found" width="60" height="50" />
             <h3>Analytics Design</h3>
             <input type="checkbox" id="togglea" />
-            <label for="togglea">Load More</label>
+            <label htmlFor="togglea">Load More</label>
 
             <dialog>
               <p>Analytics Design</p>
 
-              <label for="togglea">close</label>
+              <label htmlFor="togglea">close</label>
             </dialog>
           </div>
         </div>
@@ -53,36 +53,36 @@ class Services extends Component {
             <img src="./images/innovation.png" alt =  "img not found" width="70" height="60" />
             <h3>Artificial Innovation</h3>
             <input type="checkbox" id="togglei" />
-            <label for="togglei">Load More</label>
+            <label htmlFor="togglei">Load More</label>
 
             <dialog>
               <p>Artificial Innovation</p>
 
-              <label for="togglei">close</label>
+              <label htmlFor="togglei">close</label>
             </dialog>
           </div>
           <div className="services-box2">
             <img src="./images/design.png" alt =  "img not found" width="70" height="60" />
             <h3>Business Design</h3>
             <input type="checkbox" id="toggleb" />
-            <label for="toggleb">Load More</label>
+            <label htmlFor="toggleb">Load More</label>
 
             <dialog>
               <p>Business Design</p>
 
-              <label for="toggleb">close</label>
+              <label htmlFor="toggleb">close</label>
             </dialog>
           </div>
           <div className="services-box3">
             <img src="./images/service.svg" alt =  "img not found" width="60" height="50" />
-            <h3>Other Services/Educational Services</h3>
+            <h3>School Book/Other Services</h3>
             <input type="checkbox" id="toggleo" />
-            <label for="toggleo">Load More</label>
+            <label htmlFor="toggleo">Load More</label>
 
             <dialog>
               <p>other services</p>
 
-              <label for="toggleo">close</label>
+              <label htmlFor="toggleo">close</label>
             </dialog>
           </div>
         </div>

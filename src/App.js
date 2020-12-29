@@ -11,6 +11,7 @@ import AboutUs from './components/about us';
 import ContactUs from './components/contact us';
 import LogIn from './components/login';
 import Footer from './components/footer';
+import ForgetPassword from './components/forgetpassword'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/contactus" exact strict  component = {ContactUs}/>
       <Route path="/login"   exact strict component = {LogIn}/>
       <Route path="/signup"  exact strict  component = {SignUp}/>
+      <Route path="/forgetpassword"  exact strict  component = {ForgetPassword}/>
       </Switch>
       </Router>
       <Footer/>

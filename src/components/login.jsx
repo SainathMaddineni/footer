@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './login.css';
-import logInAccount from '../services/login_service';
-
+//import logInAccount from '../services/login_service';
+//import ForgetPassword from './components/forgetpassword';
 const UsernameRE = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
 const PasswordRE = new RegExp(/^[0-9]{8,25}$/);
 
@@ -9,11 +9,12 @@ const initialState = {
     username : "",
     password : "",
     usernameError : "",
-    passwordError : ""
+    passwordError : "",
+    checked:false
 }
 
 class LogIn extends Component {
-    state = initialState;
+    state = initialState
     constructor () {
         super()
         this.validate = this.validate.bind(this);
@@ -23,6 +24,10 @@ class LogIn extends Component {
     }
     handlePassword= (event) =>{
         this.setState({password : event.target.value});
+    }
+    forgetfunction =() =>{
+        this.props.history.push("/forgetpassword");
+
     }
     validate = event =>{
         let usernameError = "";
@@ -46,16 +51,21 @@ class LogIn extends Component {
         event.preventDefault();
         const isValid = this.validate();
         if (isValid){
-            let login = {username : this.state.username,password:this.state.password};
-            console.log('login =>'+JSON.stringify(login));
-            logInAccount.getAccount(login).then(res =>{
-                console.log(res)
+            //let login = {username : this.state.username,password:this.state.password};
+           // console.log('login =>'+JSON.stringify(login));
+            //logInAccount.getAccount(login).then(res =>{
+                //console.log(res)
+                //this.props.history.push("/home");
+            //})
+            //.catch(error =>{ 
+              //  console.log("error raised");
+            //})
+            console.log(this.state);
+            if(this.state.username === "girish12028@gmail.com" && this.state.password === "9502506410"){
+                this.setState({checked: true});
+                console.log(this.state.checked);
                 this.props.history.push("/home");
-            })
-            .catch(error =>{ 
-                console.log("error raised");
-            })
-            this.setState(initialState);
+            }
         }
     }
     render() { 
@@ -85,7 +95,7 @@ class LogIn extends Component {
                                 <label>Password</label>
                             </div>
                             <div className = "errormsg" >{this.state.passwordError}</div>
-                            <div className = "pass">Forget Password?</div>
+                            <div className = "pass" onClick = {this.forgetfunction} >Forget Password?</div>
                             <input type = "submit" onClick={this.handleSubmit} value = "Login"/>
                         </form>
                         <br></br>
