@@ -33,7 +33,8 @@ class ForgetPassword extends Component {
         event.preventDefault();
         const isValid = this.validate();
         if (isValid){
-            axios.post(Forget_API_URL,{EmailAddress:this.state.EmailAddress}).then(res =>{
+            let email = {EmailAddress:this.state.EmailAddress}
+            axios.post(Forget_API_URL,email).then(res =>{
                 console.log(res.data)
                 if(res.data === "user not found"){
                     alert("your password is sent to your mail please check to login");
@@ -42,7 +43,6 @@ class ForgetPassword extends Component {
             }).catch(err=>{ 
                  console.log(err);
             })
-            
         }
     }
     render() { 

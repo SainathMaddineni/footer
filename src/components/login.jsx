@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import './login.css';
+import axios from 'axios';
 //import logInAccount from '../services/login_service';
 //import ForgetPassword from './components/forgetpassword';
 const UsernameRE = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
 const PasswordRE = new RegExp(/^[0-9]{8,25}$/);
+const  logIn_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/web/login";
 
 const initialState = {
-    username : "",
+    emailAddress : "",
     password : "",
     usernameError : "",
     passwordError : "",
-    checked:false
 }
 
 class LogIn extends Component {
@@ -20,7 +21,7 @@ class LogIn extends Component {
         this.validate = this.validate.bind(this);
     }
     handleUserName = (event) =>{
-        this.setState({username : event.target.value});
+        this.setState({emailAddress : event.target.value});
     }
     handlePassword= (event) =>{
         this.setState({password : event.target.value});
@@ -32,7 +33,7 @@ class LogIn extends Component {
     validate = event =>{
         let usernameError = "";
         let passwordError = "";
-        if(!UsernameRE.test(this.state.username)){
+        if(!UsernameRE.test(this.state.emailAddress)){
             usernameError="*Enter proper Username"
         }
         if(!PasswordRE.test(this.state.password)){
@@ -51,21 +52,18 @@ class LogIn extends Component {
         event.preventDefault();
         const isValid = this.validate();
         if (isValid){
-            //let login = {username : this.state.username,password:this.state.password};
-           // console.log('login =>'+JSON.stringify(login));
-            //logInAccount.getAccount(login).then(res =>{
-                //console.log(res)
-                //this.props.history.push("/home");
-            //})
-            //.catch(error =>{ 
-              //  console.log("error raised");
-            //})
-            console.log(this.state);
-            if(this.state.username === "girish12028@gmail.com" && this.state.password === "9502506410"){
-                this.setState({checked: true});
-                console.log(this.state.checked);
+            axios.get(logIn_API_URL,{emailAddress:this.state.emailAddress,password:this.state.password}).then(res =>{
+                console.log(res)
                 this.props.history.push("/home");
-            }
+            }).catch(err =>{ 
+             console.log(err);
+            })
+            //console.log(this.state);
+            //if(this.state.username === "girish12028@gmail.com" && this.state.password === "9502506410"){
+                //this.setState({checked: true});
+                //console.log(this.state.checked);
+                //this.props.history.push("/home");
+            //}
         }
     }
     render() { 
@@ -83,7 +81,7 @@ class LogIn extends Component {
                         <form method = "post" >
                             <div className = "txt_field">
                                 <input type = "text " onChange = {(event) => this.handleUserName(event)} 
-                    value ={this.state.username} required/>
+                    value ={this.state.emailAddress} required/>
                                 <span></span>
                                 <label>Username</label>
                             </div>
