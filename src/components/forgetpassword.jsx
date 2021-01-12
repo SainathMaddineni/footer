@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './forgetpassword.css';
 import axios from 'axios';
+import qs from 'qs';
 const EmailCheck = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
-const  Forget_API_URL = "http://localhost:8080/web/forgetpassword";
+const  Forget_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/web/forgetpassword";
 
 class ForgetPassword extends Component {
     state = { 
@@ -34,7 +35,7 @@ class ForgetPassword extends Component {
         const isValid = this.validate();
         if (isValid){
             let email = {EmailAddress:this.state.EmailAddress}
-            axios.post(Forget_API_URL,email).then(res =>{
+            axios.post(Forget_API_URL,qs.stringify({email})).then(res =>{
                 console.log(res.data)
                 if(res.data === "user not found"){
                     alert("your password is sent to your mail please check to login");

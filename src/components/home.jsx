@@ -43,7 +43,7 @@ class Home extends Component {
                 </div>
                 </div>
                 <div className="box">
-                  <img src="/images/mission 1.png" className = "mimg" alt = "img not found"/>
+                  <img src="/images/mission_1.png" className = "mimg" alt = "img not found"/>
                   <div className= "mbox">
                     <p>It is through our passion and commitment to our clients what we develop software
                       to face real-world challenges.</p>
