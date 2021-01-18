@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './login.css';
-//import axios from 'axios';
+import axios from 'axios';
+import qs from 'qs';
 //import logInAccount from '../services/login_service';
 //import ForgetPassword from './components/forgetpassword';
 const UsernameRE = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
 const PasswordRE = new RegExp(/^[0-9]{8,25}$/);
-//const  logIn_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/web/login";
+const  logIn_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/web/login";
 
 const initialState = {
     emailAddress : "",
@@ -52,14 +53,14 @@ class LogIn extends Component {
         event.preventDefault();
         const isValid = this.validate();
         if (isValid){
-            this.props.history.push("/home");
-            //axios.get(logIn_API_URL,{emailAddress:this.state.emailAddress,password:this.state.password}).then(res =>{
-              //  console.log(res)
-                
-            //}).catch(err =>{ 
-             //console.log(err);
-            //})
-            //console.log(this.state);
+            let Login = qs.stringify({emailAddress:this.state.emailAddress,password:this.state.password});
+            axios.get(logIn_API_URL,Login).then(res =>{
+                console.log(res)
+                this.props.history.push("/service");
+            }).catch(err =>{ 
+             console.log(err);
+            })
+            console.log(this.state);
             //if(this.state.username === "girish12028@gmail.com" && this.state.password === "9502506410"){
                 //this.setState({checked: true});
                 //console.log(this.state.checked);

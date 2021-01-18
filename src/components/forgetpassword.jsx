@@ -34,16 +34,14 @@ class ForgetPassword extends Component {
         event.preventDefault();
         const isValid = this.validate();
         if (isValid){
-            let email = {EmailAddress:this.state.EmailAddress}
-            axios.post(Forget_API_URL,qs.stringify({email})).then(res =>{
-                console.log(res.data)
-                if(res.data === "user not found"){
-                    alert("your password is sent to your mail please check to login");
-                    this.props.history.push("/login");
-                }
-            }).catch(err=>{ 
-                 console.log(err);
-            })
+            let emailaddress = qs.stringify({emailAddress:this.state.EmailAddress})
+            axios.post(Forget_API_URL,emailaddress).then(response =>{
+                 console.log(response)
+                 this.props.history.push("/login");
+              })
+              .catch(error =>{ 
+                  console.log(error);
+              }) 
         }
     }
     render() { 

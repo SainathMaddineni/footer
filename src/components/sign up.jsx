@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './signup.css';
 //import SignupAccount from '../services/signup_service';
-//import axios from 'axios';
-//import qs from 'qs';
-//const SIGNUP_API_URL = "http://localhost:8080/web/signup";
+import axios from 'axios';
+import qs from 'qs';
+const SIGNUP_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/web/signup";
 
 
 
@@ -140,28 +140,28 @@ class SignUp extends Component {
             event.preventDefault();
             const isValid = this.validate();
             if (isValid){
-                this.props.history.push("/login");
+                let signUp = qs.stringify({firstName : this.state.firstname,
+                    lastName : this.state.lastname,
+                    mobileNumber :this.state.contactnumber,
+                    emailAddress : this.state.mail,
+                    password : this.state.password,
+                    address : {
+                        streetAddress: this.state.street,
+                        city :this.state.city,
+                        state : this.state.state,
+                        zipCode : this.state.zipcode,
+                        country : this.state.country}}); 
+                    console.log('signup =>'+JSON.stringify(signUp));
+                    axios.post(SIGNUP_API_URL,signUp).then(response =>{
+                        console.log(response)
+                        this.props.history.push("/login");
                     this.setState(initialState);
+                    })
+                    .catch(error =>{ 
+                        console.log(error);
+                    }) 
         }
     }
-    //let signUp = qs.stringify({firstName : this.state.firstname,
-        //lastName : this.state.lastname,
-        //mobileNumber :this.state.contactnumber,
-        //emailAddress : this.state.mail,
-        //password : this.state.password,
-        //address : {
-            //streetAddress: this.state.street,
-            //city :this.state.city,
-            //state : this.state.state,
-           // zipCode : this.state.zipcode,
-          //  country : this.state.country}}); 
-        //console.log('signup =>'+JSON.stringify(signUp));
-        //axios.post(SIGNUP_API_URL,signUp).then(response =>{
-          //  console.log(response)
-        //})
-        //.catch(error =>{ 
-           // console.log(error);
-        //}) 
     render() { 
         return (
             <div>

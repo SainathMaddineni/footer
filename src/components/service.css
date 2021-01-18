@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sansita+Swashed:wght@500&display=swap');
+.serviceheading{
+    background-color:lightgoldenrodyellow;
+}
+.line{
+    color:red;
+    padding-top:10px;
+}
+.serviceheading h1 {
+    text-align:center;
+    padding:20px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Sansita Swashed', cursive;
+}
+.contentcontainer{
+    background:url('/images/blue.jpg');
+    border-radius: 10px;
+    height:250px;
+    width:500px;
+    margin-left:25px;
+    border:solid;
+    color:black;
+    display:flexbox;
+    position:relative;
+}
+.contentcontainer h2{
+    color:red;
+    float:right;
+    font-weight:bold;
+    font-size:29px;
+    padding:10px;
+    font-family: 'Dancing Script', cursive;
+}
+.descbox{
+    border:solid;
+    height:100px;
+    width:400px;
+    color:black;
+    float:right;
+    border-radius:5px;
+    margin-right: 10px;
+}
