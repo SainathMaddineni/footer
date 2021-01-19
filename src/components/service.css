@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sansita+Swashed:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Sansita+Swashed&family=Texturina:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .serviceheading{
     background-color:lightslategrey;
 }
@@ -15,44 +16,64 @@
     font-family: 'Sansita Swashed', cursive;
 }
 .contentcontainer{
-    background:url('/images/blue.jpg');
     border-radius: 10px;
     height:250px;
     width:500px;
     margin-left:25px;
     border:solid;
     color:white;
-    display:flexbox;
+    margin-bottom:25px;
+    margin-top:70px;
     position:relative;
+}
+.mcontentimage{
+    background:url('/images/blue.jpg');
+}
+.wcontentimage{
+    background:url('/images/web_dev.jpg');
+    color:yellow;
 }
 .contentcontainer h2{
     color:red;
     font-weight:bold;
     font-size:29px;
     padding:10px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto Slab', serif;
 }
 .descbox{
-    border:solid;
-    height:100px;
-    width:400px;
+    height:160px;
+    width:340px;
     color:black;
     float:left;
     border-radius:5px;
-    margin-left: 10px;
     margin-top:5px;
+    position:absolute;
+    margin-left:10px;
 }
 .descbox p{
     text-align: justify;
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
 }
-#myDIV {
-    width: 60%;
-    padding: 50px 0;
+.bookapp{
+    margin:auto;
+    width:100%;
+}
+.bookapp h2{
     text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-  }
-  
-  
+    color:red;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Texturina', serif;
+    
+}
+.mobdev{
+    height:150px;
+    width:150px;
+    float:right;
+    margin-right:3px;
+}
+.leftcontent{
+    float:left;
+}
+.rightcontent{
+    float:right;
+}

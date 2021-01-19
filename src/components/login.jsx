@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './login.css';
 import axios from 'axios';
-import qs from 'qs';
 //import logInAccount from '../services/login_service';
 //import ForgetPassword from './components/forgetpassword';
 const UsernameRE = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
@@ -54,8 +53,7 @@ class LogIn extends Component {
         const isValid = this.validate();
         if (isValid){
             this.props.history.push("/service");
-            let Login = qs.stringify({emailAddress:this.state.emailAddress,password:this.state.password});
-            axios.get(logIn_API_URL,Login).then(res =>{
+            axios.get(logIn_API_URL,{emailAddress:this.state.emailAddress,password:this.state.password}).then(res =>{
                 console.log(res)
             }).catch(err =>{ 
              console.log(err);

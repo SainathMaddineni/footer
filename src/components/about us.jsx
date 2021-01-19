@@ -25,11 +25,6 @@ class AboutUs extends Component {
             </div>
             <div className="company-text">
               <p>
-                This paragraph is regarding about company you will know
-                everything from here This paragraph is regarding about company
-                you will know everything from here This paragraph is regarding
-                about company you will know everything from here This paragraph
-                is regarding about company you will know everything from here
               </p>
             </div>
           </fieldset>
