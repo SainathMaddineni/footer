@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sansita+Swashed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 .serviceheading{
-    background-color:lightgoldenrodyellow;
+    background-color:lightslategrey;
 }
 .line{
     color:red;
@@ -20,13 +21,12 @@
     width:500px;
     margin-left:25px;
     border:solid;
-    color:black;
+    color:white;
     display:flexbox;
     position:relative;
 }
 .contentcontainer h2{
     color:red;
-    float:right;
     font-weight:bold;
     font-size:29px;
     padding:10px;
@@ -37,7 +37,22 @@
     height:100px;
     width:400px;
     color:black;
-    float:right;
+    float:left;
     border-radius:5px;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-top:5px;
 }
+.descbox p{
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+#myDIV {
+    width: 60%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+  
+  

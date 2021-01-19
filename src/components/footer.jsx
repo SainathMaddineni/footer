@@ -7,7 +7,7 @@ class Footer extends Component {
       <div>
         <footer>
           <p style={{ textAlign: "center" }}>
-            Copyright © 2020 Slope Rate Tech Private Limited - All Rights
+            Copyright © 2020 Slope Rate Techno Private Limited - All Rights
             Reserved.{" "}
           </p>
         </footer>

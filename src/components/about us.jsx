@@ -17,10 +17,9 @@ class AboutUs extends Component {
               <img src="/images/img.jpg" width="400" height="450" alt="ceo" />
               <div className="ceo-fadedbox">
                 <div className="title text">
-                  Founder and CEO of slope rate tech Animated Text Over a Faded
-                  Image on Hover Animated Text Over a Faded Image on Hover
-                  Animated Text Over a Faded Image on Hover Animated Text Over a
-                  Faded Image on Hover Animated Text Over a Faded Image on Hover
+                  Founder and CEO of slope rate techno pvt ltd.
+                  Manikanta Sunkara
+                  Smanikanta@sloperateinc.com
                 </div>
               </div>
             </div>
