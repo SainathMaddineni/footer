@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sansita+Swashed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Sansita+Swashed&family=Texturina:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 .serviceheading{
-    background-color:lightslategrey;
+    background-color:lightgray;
 }
 .line{
     color:red;
@@ -19,7 +20,7 @@
     border-radius: 10px;
     height:250px;
     width:500px;
-    margin-left:25px;
+    margin-left:100px;
     border:solid;
     color:white;
     margin-bottom:25px;
@@ -32,6 +33,10 @@
 .wcontentimage{
     background:url('/images/web_dev.jpg');
     color:yellow;
+}
+.rcontentimage{
+    background:url('/images/rob_dev.jpg');
+    color:firebrick
 }
 .contentcontainer h2{
     color:red;
@@ -50,6 +55,14 @@
     position:absolute;
     margin-left:10px;
 }
+.webdevelop{
+    position:absolute;
+    margin-left:60%;
+    top:227px;
+}
+.robotics{
+    margin-left:35%;
+}
 .descbox p{
     text-align: justify;
 }
@@ -57,13 +70,29 @@
     margin:auto;
     width:100%;
 }
+.bookappbox{
+    height:600px;
+    width:800px;
+    text-align: center;
+    border:solid;
+    margin-top:50px;
+    border-radius:50px;
+    background:url('/images/background_option.jpg');
+    margin-left:25%;
+
+}
+.bookappbox h3{
+    margin-top:30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
 .bookapp h2{
     text-align: center;
     color:red;
     font-family: 'Ibarra Real Nova', serif;
     font-family: 'Sansita Swashed', cursive;
     font-family: 'Texturina', serif;
-    
+    margin:30px;
 }
 .mobdev{
     height:150px;
@@ -77,3 +106,159 @@
 .rightcontent{
     float:right;
 }
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    margin-left:42%;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top:2%;
+    background-color:lightseagreen;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+  .fourth {
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .fourth:hover {
+    background-position: 0;
+  }
+  .outer {
+    position: relative;
+    margin:auto;
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  .inner {
+    width: inherit;
+    text-align: center;
+  }
+  
+  .inner label { 
+    font-size: .8em; 
+    line-height: 4em;
+    text-transform: uppercase;
+    color:black;
+    transition: all .3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .closebtn{
+      margin-right:5%;
+      margin-bottom:2%;
+  }
+  
+  .inner:before, .inner:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: inherit;
+    background:black;
+    left: 0;
+    transition: all .3s ease-in;
+  }
+  
+  .inner:before {
+    top: 50%; 
+    transform: rotate(45deg);  
+  }
+  
+  .inner:after {  
+    bottom: 50%;
+    transform: rotate(-45deg);  
+  }
+  
+  .outer:hover .inner label {
+    opacity: 1;
+  }
+  
+  .outer:hover .inner:before,
+  .outer:hover .inner:after {
+    transform: rotate(0);
+  }
+  
+  .outer:hover .inner:before {
+    top: 0;
+  }
+  
+  .outer:hover .inner:after {
+    bottom: 0;
+  }
+  .react-calendar__month-view__weekdays {
+    color: gray;
+  }
+  
+  .react-calendar__navigation button {
+    font-size: 1em;
+  }
+  .calender{
+    margin-left:28%;
+    margin-top:1%;
+  }
+  .optionbox{
+      height:50px;
+      width:750px;
+      margin-left:2.5%;
+      margin-top:2%;
+      font-size: 20px;
+  }
+  .option{
+    margin-right:15px;
+  }
+  .optiongap{
+    margin-right:5px;
+  }
+  .btn3{
+      margin:10px;
+      margin-left:42%;
+      width:150px;
+      margin-top:30px;
+      text-align:center;
+  }
+  .third {
+      display:flex;
+    border-color: yellow;
+    color: #fff;
+    box-shadow: 0 0 20px 20px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  
+  
+
+
+
