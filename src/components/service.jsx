@@ -6,8 +6,31 @@ class Service extends Component {
     state = { 
         show :false,
         date: new Date(),
-        status:true
+        status:true,
+        clear : true,
+        ismobilechecked:true,
+        iswebchecked:true,
+        isrobotchecked:true,
+        error:" "
      }
+     togglemobile = () => {
+         let resp = this.state.ismobilechecked
+        this.setState({
+            ismobilechecked: !resp
+        });
+    }    
+    toggleweb= () => {
+        let resp = this.state.iswebchecked
+       this.setState({
+        iswebchecked: !resp
+       });
+   }    
+   togglerobot = () => {
+    let resp = this.state.isrobotchecked
+   this.setState({
+    isrobotchecked: !resp
+   });
+}    
      onChange = date => {
          this.setState({ date })
          console.log(this.state.date)
@@ -18,6 +41,24 @@ class Service extends Component {
         this.setState({ show: !res });
         this.setState({ status: !result});
       };
+      toggleclaer = () =>{
+        let mobile = this.state.ismobilechecked;
+        let web = this.state.iswebchecked;
+        let robot = this.state.isrobotchecked;
+        if(!mobile || !web || !robot){
+        var resp = this.state.clear;
+        this.setState({ show: !resp });
+        this.setState({ status: !resp});
+        this.setState({ clear: !resp});
+        }
+        else
+        {
+            this.setState({
+                error: "please select any one"
+            });
+        }
+      }
+
     render() { 
         return ( 
             <div className = "serviceheading">
@@ -51,9 +92,11 @@ class Service extends Component {
                 <hr></hr>
                 <div className = "bookapp">
                     <h2>BOOK YOUR APPOINTMENT</h2>
-
                     {
-                     this.state.status ?(<button onClick = {this.toggle} className="btn fourth">Click Here</button>):null
+                     this.state.clear ? null:(<h1>Thankyou we will contact you</h1>)
+                    }
+                    {
+                     this.state.status ?(<button onClick = {this.toggle} className="btn fourth">GO Here</button>):null
                     }
                     {
                         this.state.show ? (<div className = "bookappbox"> <h3>CHOOSE YOUR FUTURE</h3>
@@ -65,12 +108,13 @@ class Service extends Component {
                         </div>
                         <hr></hr>
                         <div className = "optionbox">
-                        <input type="checkbox" className = "optiongap" id="vehicle1" name="vehicle1" value="Bike"/>
-                        <label className = "option" for="vehicle1"> Android/Ios/Mobile</label>
-                        <input type="checkbox"  className = "optiongap"id="vehicle2" name="vehicle2" value="Car"/>
-                        <label className = "option" for="vehicle2">web developement</label>
-                        <input type="checkbox"  className = "optiongap" id="vehicle3" name="vehicle3" value="Boat"/>
-                        <label className = "option" for="vehicle3">Robotics/Artificial intelligence</label>
+                        <input type="checkbox"
+                        onClick = {this.togglemobile} className = "optiongap" id="vehicle1" name="vehicle1" value="Bike"/>
+                        <label className = "option" htmlFor ="vehicle1"> Android/Ios/Mobile</label>
+                        <input type="checkbox"  onClick = {this.toggleweb} className = "optiongap"id="vehicle2" name="vehicle2" value="Car"/>
+                        <label className = "option" htmlFor ="vehicle2">web developement</label>
+                        <input type="checkbox"  onClick = {this.togglerobot} className = "optiongap" id="vehicle3" name="vehicle3" value="Boat"/>
+                        <label className = "option" htmlFor ="vehicle3">Robotics/Artificial intelligence</label>
                         </div>
                         <div className = "calender">
                             <Calendar
@@ -79,7 +123,8 @@ class Service extends Component {
                             />
                         </div>
                             </div>
-                            <button className ="btn third btn3">Submit</button>
+                            <button className ="btn third btn3" onClick = {this.toggleclaer}>Submit</button>
+                            <div className = "errormsg">{this.state.error}</div>
                             </div>) : null
                     }
                 </div>

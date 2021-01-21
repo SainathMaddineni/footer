@@ -71,7 +71,7 @@
     width:100%;
 }
 .bookappbox{
-    height:600px;
+    height:620px;
     width:800px;
     text-align: center;
     border:solid;
@@ -256,6 +256,11 @@
   }
   .third:hover {
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  .errormsg{
+    font-size:25px;
+    color:red;
+    font-weight:600
   }
   
   
