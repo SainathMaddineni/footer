@@ -9,7 +9,7 @@
 body{
   font:15.5px/1.5 Arial,Helvetica,sans-serif;
   padding:0;
-  margin:0;
+  margin:0 auto;
   background-color:#f4f4f4;
 }
 
@@ -103,6 +103,7 @@ header :link{
   }
   .container1{
     width:100%;
+    margin :0 auto;
     overflow:hidden;
   }
   .button_1{

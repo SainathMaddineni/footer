@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './signup.css';
 //import SignupAccount from '../services/signup_service';
 import axios from 'axios';
-import qs from 'qs';
-const SIGNUP_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/web/signup";
+//import qs from 'qs';
+const SIGNUP_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/on-cloud-web/web/signup";
 
 
 
@@ -136,11 +136,11 @@ class SignUp extends Component {
               }
             return true;
         }
-        handleSubmit = (event) =>{
+        handleSubmit1 = (event) =>{
             event.preventDefault();
             const isValid = this.validate();
             if (isValid){
-                let signUp = qs.stringify({firstName : this.state.firstname,
+                let signUp = ({firstName : this.state.firstname,
                     lastName : this.state.lastname,
                     mobileNumber :this.state.contactnumber,
                     emailAddress : this.state.mail,
