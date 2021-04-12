@@ -7,19 +7,19 @@ class NavBar extends Component {
         return (
 
             <div>
-                    <header>
-                        <div className ="container">
+                    <header id ="header">
+                        <div className ="container" id = "containernav">
                             <div id="branding">
-                                <h1 style={{ color: 'yellow' }}> Slope Rate Techno Private Limited </h1>
+                                <h1  id = "navlink" style={{ color: 'yellow' }}> Slope Rate Techno Private Limited </h1>
                             </div>
                         <nav>
                             <ul>
-                                <Link to = "/signup">SIGNUP</Link>
-                                <Link to = "/login">LOGIN</Link>
-                                <Link to = "/contactus">CONTACT US</Link>
-                                <Link to = "/aboutus">ABOUT US</Link>
-                                <Link to = "/services">SERVICES</Link>
-                                <Link to = "/home">HOME</Link>
+                                <Link to = "/signup"id = "headerlink" >SIGNUP</Link>
+                                <Link to = "/login" id = "headerlink">LOGIN</Link>
+                                <Link to = "/contactus"  id = "headerlink">CONTACT US</Link>
+                                <Link to = "/aboutus"  id = "headerlink">ABOUT US</Link>
+                                <Link to = "/services" id = "headerlink">SERVICES</Link>
+                                <Link to = "/home" id = "headerlink">HOME</Link>
                             </ul>
                         </nav>
                         </div>

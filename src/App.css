@@ -30,6 +30,7 @@ body{
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -43,6 +44,7 @@ body{
   }
 }
 header{
+  width:auto;
   background:#35424a;
   color:#ffffff;
   padding-top:30px;
@@ -77,9 +79,8 @@ header :link{
     color:#cccccc;
     font-weight:bold;
   }
-  
   .container{
-    width:80%;
+    width:auto;
     margin:auto;
     overflow:hidden;
   }
@@ -297,8 +298,8 @@ select {
   }
   #showcase img{
     position:relative;
-    height:700px;
-    width:1519px ;
+    height:100vh;
+    width:100vw;
   }
   .cbox{
     width:700px;
@@ -334,7 +335,7 @@ select {
     width:250px;
   }
   #boxes{
-    margin-top: 20px;
+    margin-top:20px;
   }
   #boxes.box{
     float:left;
@@ -356,7 +357,7 @@ select {
     position:absolute;
   }
   .bgimg{
-    width:1800px;
+    width:100%;
     height:400px;
     position:relative;
   }
@@ -592,4 +593,106 @@ select {
 .img6{
   height:500px;
   width:450px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px){
+  #header{
+    width:100%;
+  }
+  #containernav{
+    width:100%;
+  }
+  #navlink{
+    font-size:25px;
+  }
+  #headerlink{
+  font-size:10px;
+  width: 50px;
+  height: 50px;
+  margin:5px;
+  }
+  h1{
+    font-size:18px;
+  }
+  #cboxid{
+    width:300px;
+    height:100px;
+    top:300px;
+    font-size:10px;
+    margin-left:2px;
+  }
+  #para{
+    font-size:15px;
+  }
+  #showcase img{
+    height:50vh;
+    width:100vw;
+  }
+  #showcase h1{
+    font-size:15px;
+    margin-left:10px;
+    margin-top:10px;
+  }
+  #showcase p{
+    font-size:10px;
+  }
+  #newsletter h1{
+    float: left;
+    font-size:15px;
+  }
+  .button_1{
+   height:5vh;
+   margin:10px;
+  }
+  #boxes{
+    margin-top:5px;
+  }
+  #boxes.box{
+    float:left;
+    border:1px solid white;
+    text-align:center;
+    width:10;
+  }
+  .mimg{
+    width:25vw;
+    height:18vh;
+    margin-left:65vw;
+    top:98vh;
+    position:absolute; 
+  }
+  .vimg{
+    width:25vw;
+    margin-left:15vw;
+    top:105vh;
+    position:absolute;
+  }
+  .vbox{
+    height:20vh;
+    width:45vw;
+    top:115vh;
+    margin-left:3vw;
+    border-radius:5px;
+  }
+  .vbox p{
+    font-size:10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    font-style: oblique;
+    color:white;
+  }
+  .mbox{
+    height:20vh;
+    width:48vw;
+    top:115vh;
+    margin-left:50vw;
+    border-radius:5px;
+  }
+  .mbox p{
+    font-size:10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    font-style: oblique;
+    color:white;
+  }
+  
+
 }
