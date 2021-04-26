@@ -4,6 +4,7 @@
   
   /* Create two equal columns that floats next to each other */
   .column {
+    margin-top:-30px;
     float: left;
     width: 50%;
     height: 120vh;
@@ -13,6 +14,7 @@
      /* Should be removed. Only for demonstration */
   }
   .column1 {
+    margin-top:-30px;
     float: left;
     width: 50%;
     height: 120vh;
