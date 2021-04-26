@@ -172,5 +172,170 @@
       border-radius:1000px;
       transition: 0.8s;
   }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 900px){
+    .locbox{
+        height:0vh;
+        margin-top:2vh;
+        left:10vw;
+        width:0vw;
+    }
+    .contactimage{
+        height:0vh;
+        width:0vw;
+    }
+    .contactadj{
+        margin-left:15vw;
+        margin-top:10vh;
+    }
+    .contactform{
+        position:absolute;
+        padding:1vw 1vw;
+        background:#fff;
+        margin-left:-5vw;
+        padding-left:2vw;
+        width:calc(100% - 20vw);
+        height:80vh;
+        box-shadow:0 1vw 1vw rgba(0,0,0,0.5);
+    }
+    .contactform h2{
+        color:#0f3959;
+        font-size:25px;
+        font-weight:500;
+        margin-top:auto;
+        margin-bottom:10vh;
+        margin-top:5vh
+      }
+      .formBox{
+        position:relative;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top:1vh;
+        padding-left:2vw;
+    }
+    .inputBox{
+        position:relative;
+        margin:0 0 5px 0;
+    }
+    .inputBox input,textarea{
+        width:100% !important;
+        resize:none;
+        padding:5px 0;
+        font-size:10px;
+        font-weight:300;
+        color:#333;
+        border:none;
+        border-bottom:1px solid #777;
+        outline:none;
+        margin-bottom:40px;
+    }
+    .inputBox span{
+        position:absolute;
+        left:0;
+        font-size:10px;
+        font-weight:none;
+        color:#333;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+    .inputBox input:focus ~ span,
+    .inputBox textarea:focus ~ span,
+    .inputBox input:valid ~ span,
+    .inputBox textarea:valid ~ span
+    {
+        transform: translateY(-25px);
+        font-size:10px;
+        font-weight:400;
+        letter-spacing: 1px;
+        color:darkgreen;
+    }
+    .inputBox [type = "submit"]
+    {
+        position:relative;
+        cursor:pointer;
+        background:#0f3959;
+        color:#fff;
+        border:none;
+        max-width:200px;
+        padding:5px;
+    }
+    .inputBox [type = "submit"]
+  {
+      position:relative;
+      cursor:pointer;
+      background:#0f3959;
+      color:#fff;
+      border:none;
+      max-width:80px;
+      padding:5px;
+      font-size:10px;
+  }
+  .lctncomBox{
+    height:55vh;
+    width:50vw;
+    position:absolute;
+    margin-top:87vh;
+    border-radius:20px;
+    background-color:white;
+    box-shadow:0 60px 60px rgba(0,0,0,0.5);
+}
+.lctncomBox h2{
+    font-size:15px;
+    font-weight:800;
+    color:#0f3959;
+    font-style:normal;
+    font-family:monospace;
+    text-align:center;
+    margin-top:20vh;
+}
+.lctncomBox p{
+  padding:10px;
+  font-size:10px;
+  font-weight:normal;
+  font-family:cursive;
+  color:firebrick;
+  text-align:center;
+}
+.emailcon{
+    margin-left:24vw;
+}
+.locationcon{
+    margin-top:70vh;
+  margin-left:24vw;
+}
+.phonecon{
+   
+  margin-left:24vw;
+  margin-top:130vh;
+}
+.contactimg{
+    height:15vh;
+    width:15vw;
+    margin-left:17vw;
+    margin-top:20px;
+    position:absolute;
+}
+.fax{
+    margin-top:10px;
+    position:relative;
+    font-size:10px;
+    font-weight:800;
+    color:#0f3959;
+    font-style:normal;
+    font-family:monospace;
+    text-align:center;
+}
+.lctncomBox:hover{
+    height:58vh;
+    width:53vw;
+    transition: 0.8s;
+}
+.locbox:hover{
+    border-radius:1000px;
+    transition: 0.8s;
+}
+     
+
+  }
 
 

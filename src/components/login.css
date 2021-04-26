@@ -118,9 +118,49 @@
     border-color:red;
     transition:0.5s;
   }
-  .errormsg{
-    font-size: 12px;
+  .errormsg1{
+    font-size:15px;
     color:red;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 900px){
+    .imagebox{
+      width: 20vw;
+      height:550px;
+      float:left;
+      align-items: center;
+      background-color:darkseagreen;
+  }
+  .cofeeimg{
+    width: 0vw;
+    height:550px;
+  }
+  .center{
+    border:1px solid black;
+    width:250px;
+    background-color: white;
+    border-radius:10px;
+    position: absolute;
+    top:50%;
+    left:50.8%;
+    transform:translate(-50%,-50%);
+    }
+    input[type = "submit"]{
+      width:50%;
+      height:40px;
+      border:2px solid;
+      background:#2691d9;
+      border-radius:25px;
+      font-size:15px;
+      color:#e9f4fb;
+      font-weight:700;
+      cursor:pointer;
+      outline:none;
+    }
+    .errormsg1{
+      font-size:10px;
+      color:red;
+    }
   }
   
   

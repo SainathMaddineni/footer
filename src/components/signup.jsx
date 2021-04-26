@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './signup.css';
-//import SignupAccount from '../services/signup_service';
 import axios from 'axios';
 //import qs from 'qs';
 const SIGNUP_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/on-cloud-web/web/signup";
-
-
 
 const mobileRe = new RegExp(/^[0-9]{10}$/);
 const zipcodeRe = new RegExp(/^[0-9]{6}$/);
@@ -37,7 +34,9 @@ const initialState = {
         zipcodeError:"",
         next :false
 }
-class SignUp extends Component {
+
+class SignUpDemo extends Component {
+
     state = initialState;
     constructor () {
         super()
@@ -160,15 +159,19 @@ class SignUp extends Component {
                     .catch(error =>{ 
                         console.log(error);
                     }) 
-        }
-    }
+                }
+            }
     render() { 
-        return (
+        return ( 
             <div>
-                <div className = "box2">
-                    <div className = "container5">
+            <div class="row">
+                <div class="column">
+                    <img  className = "signup_img" src="/images/emp.png"  alt = "img not found"/>
+                </div>
+                <div class="column1">
+                <div className = "container10">
                         <h1>SIGNUP HERE</h1>
-                    <form >
+                    <form  type = "post">
                     <fieldset >
                     <br></br><br></br>
                     <div>
@@ -199,24 +202,24 @@ class SignUp extends Component {
                     <div className = "leftnameerr">{this.state.stateError}</div>
                     <div className = "rightnameerr">{this.state.zipcodeError}</div>
                     <br></br><br></br>
-                    <label htmlFor="cntry">Country  :</label>
+                    <label htmlFor="country">Country  :</label>
                     <select name="country" value = {this.state.country} onChange = {(event) => this.handlecountry(event)} id="cntry">
                         <option defaultValue ="usa">USA</option>
                         <option value="india">INDIA</option>
                         <option value="australia">AUSTRALIA</option>
                         <option value="canada">CANADA</option>
                     </select><br></br><br></br>
-                    <label htmlFor="pw">Password:</label>
+                    <label htmlFor="pw" className = "password">Password:</label>
                     <input type="password" id="pw" onChange = {(event) => this.handlepassword(event)}
-                         value = {this.state.password}name="password" required/>
-                         <div className = "specialnameerr">{this.state.passwordError}</div>
+                         value = {this.state.password}name="password" required/><br></br><br></br>
+                         <div className = "specialnameerr1">{this.state.passwordError}</div>
                          <br></br><br></br>
-                    <label htmlFor="pw">Confirm Password:</label>
+                    <label htmlFor="pw" className = "password" >Confirm Password:</label>
                     <input type="password" onChange = {(event) => this.handleconfirmpassword(event)} 
                     value = {this.state.confirmpassword} id="cpw" name="password" required/>
                     <div className = "specialnameerr">{this.state.confirmpasswordError}</div>
-                    <br></br><br></br>
-                    <label htmlFor="ml">Email:</label>
+                    <br></br><br></br><br></br>
+                    <label htmlFor="ml" className = "ml">Email:</label>
                     <input type="email" onChange = {(event) => this.handleEmail(event)} 
                     value = {this.state.email} id="ml" name="email" required/>
                     <div className = "specialnameerr">{this.state.emailError}</div>
@@ -232,23 +235,18 @@ class SignUp extends Component {
                         value = {this.state.contactnumber} id="phone" name="phone" required/>
                         <div className = "specialnameerr">{this.state.phonenumberError}</div>
                     <button className="button1" vlaue = "Next" 
-                        onClick={this.handleSubmit}  ><span>submit</span></button>
+                        onClick={this.handleSubmit1}  ><span>submit</span></button>
                     </div>
+
                     <br></br>
                 </fieldset>
                 </form>
                     </div>
                     </div>
-                <div className = "box1">
-                    <img  className = "image1" src="/images/emp.png"  alt = "img not found"/>
-                </div>
-                <div className = "footercss">
-                <footer>
-                    <p>SlopeRateTech,Copyright&copy;2020</p>
-                </footer>
-                </div>
             </div>
-          );
+            </div>
+         );
     }
 }
-export default SignUp;
+ 
+export default SignUpDemo ;

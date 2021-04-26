@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './login.css';
-import axios from 'axios';
+//import axios from 'axios';
 //import logInAccount from '../services/login_service';
 //import ForgetPassword from './components/forgetpassword';
 const UsernameRE = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
 const PasswordRE = new RegExp(/^[0-9]{8,25}$/);
-const  logIn_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/web/login";
+//const  logIn_API_URL = "http://localhost:8080/web/login";
 
 const initialState = {
     emailAddress : "",
@@ -51,13 +51,20 @@ class LogIn extends Component {
     handleSubmit = (event) =>{
         event.preventDefault();
         const isValid = this.validate();
+        let loginObj = {
+            "emaiaddress" : "{this.state.emailAddress}",
+            "Password" : "{this.state.password}"
+        }
         if (isValid){
             this.props.history.push("/service");
-            axios.get(logIn_API_URL,{emailAddress:this.state.emailAddress,password:this.state.password}).then(res =>{
-                console.log(res)
-            }).catch(err =>{ 
-             console.log(err);
-            })
+            fetch('http://localhost:8080/web/login',{
+                method : 'GET' ,
+                headers : {'Content-Type' : 'application/json'},
+                body:JSON.stringify(loginObj)
+            }).then(res => 
+                {
+                    console.log(res);
+                });
             console.log(this.state);
         }
     }
@@ -80,14 +87,14 @@ class LogIn extends Component {
                                 <span></span>
                                 <label>Username</label>
                             </div>
-                            <div className = "errormsg">{this.state.usernameError}</div>
+                            <div className = "errormsg1">{this.state.usernameError}</div>
                             <div className = "txt_field">
                                 <input type = "password" onChange = {(event) => this.handlePassword(event)} 
                     value ={this.state.password} required/>
                                 <span></span>
                                 <label>Password</label>
                             </div>
-                            <div className = "errormsg" >{this.state.passwordError}</div>
+                            <div className = "errormsg1" >{this.state.passwordError}</div>
                             <div className = "pass" onClick = {this.forgetfunction} >Forget Password?</div>
                             <input type = "submit" onClick={this.handleSubmit} value = "Login"/>
                         </form>
