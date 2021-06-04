@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './signup.css';
-import axios from 'axios';
+//import axios from 'axios';
 //import qs from 'qs';
-const SIGNUP_API_URL = "https://cors-anywhere.herokuapp.com/http://localhost:8080/on-cloud-web/web/signup";
+//const SIGNUP_API_URL = "http://localhost:8080/on-cloud-web/web/signup";
 
 const mobileRe = new RegExp(/^[0-9]{10}$/);
 const zipcodeRe = new RegExp(/^[0-9]{6}$/);
@@ -14,7 +14,7 @@ const initialState = {
     firstname :"",
     lastname : "",
         mail :"",
-        country:"",
+        country:"USA",
         password:"",
         street:"",
         state:"",
@@ -139,7 +139,9 @@ class SignUpDemo extends Component {
             event.preventDefault();
             const isValid = this.validate();
             if (isValid){
-                let signUp = ({firstName : this.state.firstname,
+                const SignUp = 
+                {
+                    firstName : this.state.firstname,
                     lastName : this.state.lastname,
                     mobileNumber :this.state.contactnumber,
                     emailAddress : this.state.mail,
@@ -149,28 +151,37 @@ class SignUpDemo extends Component {
                         city :this.state.city,
                         state : this.state.state,
                         zipCode : this.state.zipcode,
-                        country : this.state.country}}); 
-                    console.log('signup =>'+JSON.stringify(signUp));
-                    axios.post(SIGNUP_API_URL,signUp).then(response =>{
-                        console.log(response)
-                        this.props.history.push("/login");
+                        country : this.state.country
+                               }
+                }; 
+                const signUp = JSON.stringify(SignUp)
+                console.log(signUp);
+                fetch('http://localhost:8080/web/signup',{
+                method : 'POST',
+                headers : 
+                {
+                    'Accept' : 'application/json',
+                    'Content-Type' : 'application/json'
+                },
+                body:signUp
+            }).then(res => 
+                {
+                    console.log(res);
+                });
+                        
                     this.setState(initialState);
-                    })
-                    .catch(error =>{ 
-                        console.log(error);
-                    }) 
                 }
             }
     render() { 
         return ( 
             <div>
-            <div class="row">
-                <div class="column">
+            <div className="row">
+                <div className="column">
                     <img  className = "signup_img" src="/images/emp.png"  alt = "img not found"/>
                 </div>
-                <div class="column1">
+                <div className="column1">
                 <div className = "container10">
-                        <h1>SIGNUP HERE</h1>
+                        <h1>SIGNUP HERE</h1>q
                     <form  type = "post">
                     <fieldset >
                     <br></br><br></br>

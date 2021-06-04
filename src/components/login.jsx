@@ -51,21 +51,26 @@ class LogIn extends Component {
     handleSubmit = (event) =>{
         event.preventDefault();
         const isValid = this.validate();
-        let loginObj = {
-            "emaiaddress" : "{this.state.emailAddress}",
-            "Password" : "{this.state.password}"
+        const loginObj = {
+            emailAddress : this.state.emailAddress,
+            password : this.state.password
         }
+        const login = JSON.stringify(loginObj)
         if (isValid){
             this.props.history.push("/service");
             fetch('http://localhost:8080/web/login',{
-                method : 'GET' ,
-                headers : {'Content-Type' : 'application/json'},
-                body:JSON.stringify(loginObj)
+                method : 'POST',
+                headers : 
+                {
+                    'Accept' : 'application/json',
+                    'Content-Type' : 'application/json'
+                },
+                body:login
             }).then(res => 
                 {
                     console.log(res);
                 });
-            console.log(this.state);
+            console.log(login);
         }
     }
     render() { 
