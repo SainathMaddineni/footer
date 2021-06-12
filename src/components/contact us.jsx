@@ -14,8 +14,8 @@ const initialContact =
         mail :"",
         Message : "",
         phonenumber : "",
-        firstnameError :"space not allowed",
-        lastnameError : "space not allowed",
+        firstnameError :"",
+        lastnameError : "",
         mailError :"",
         MessageError : "",
         phonenumberError : ""
@@ -163,20 +163,20 @@ class ContactUs extends Component {
                         value = {this.state.email} name = "email" required/>
                         <span>Email Address </span>
                     </div>
-                    <div className = "lefterror">{this.state.firstnameError}</div>
+                    <div className = "emailerror">{this.state.emailError}</div>
                     <div className = "inputBox w50">
                         <input type = "text"   onChange = {(event) => this.handlenumber(event)} 
                         value = {this.state.phonenumber} name = "phonenumber" required/>
                         <span>Mobile Number </span>
                     </div>
-                    <div className = "righterror">{this.state.firstnameError}</div>
+                    <div className = "phoneerror">{this.state.phonenumberError}</div>
                     <br></br> <br></br><br></br> <br></br>
                     <div className = "inputBox w100">
                         <textarea name = "message" required onChange = {(event) => this.handleMessage(event)} 
                         value = {this.state.Message} ></textarea>
                         <span>Write Your Message Here..... </span>
                     </div>
-                    <div className = "centererror">{this.state.firstnameError}</div>
+                    <div className = "centererror">{this.state.MessageError}</div>
                     <div className = "inputBox w100">
                         <input type = "submit" value = "send"/>
                     </div>

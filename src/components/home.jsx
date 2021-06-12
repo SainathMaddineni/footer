@@ -13,7 +13,7 @@ class Home extends Component {
           <h1> Predict the future with innovative techonologies.....</h1>
         </div>
         <div className = "cbox" id = "cboxid">
-          <p  id = " #para">Software innovation,Like almost every other kind of
+          <p  id = "para">Software innovation,Like almost every other kind of
             innovation,requires the ability to collaborate and share ideas with other people,
             and to sit down and talk with customers and get their feedback and understand their
             needs....</p>

@@ -173,22 +173,35 @@
       transition: 0.8s;
   }
   .lefterror{
-      margin-left:-30%;
+      position:absolute;
       margin-top:7%;
-      font-size:12px;
+      font-size:15px;
       color:red;
-
   }
   .centererror{
-    margin-top:-7%;
-    font-size:12px;
-    margin-left:38%;
+    position:absolute;
+    font-size:15px;
+    margin-top:47%;
     color:red;
   }
+  .emailerror{
+    position:absolute;
+    margin-top:23%;
+    font-size:15px;
+    color:red;
+}
+.phoneerror{
+    position:absolute;
+    font-size:15px;
+    margin-left:45%;
+    margin-top:23%;
+    color:red;
+}
   .righterror{
-    margin-left:-28%;
+    margin-left:45%;
     margin-top:7%;
-    font-size:12px;
+    position:absolute;
+    font-size:15px;
     color:red;
 }
  
