@@ -137,28 +137,63 @@ class SignUpDemo extends Component {
             const isValid = this.validate();
             if (isValid){
                 console.log('iam valid')
-        const SignUp = 
-            
-                {
-                    emailAddress : this.state.mail ,
-                    password : this.state.password
-                };
-             
-            console.log(SignUp)
-            const signUp = JSON.stringify(SignUp)
-            console.log(signUp)
-            fetch('https://on-cloud-web-service.azurewebsites.net/web/login',{
+      const SignUp = 
+      {
+      
+          firstName : this.state.firstname,
+          lastName : this.state.lastname,
+          mobileNumber :this.state.contactnumber,
+          emailAddress : this.state.mail,
+          password : this.state.password,
+          address : {
+              streetAddress: this.state.street,
+              city :this.state.city,
+              state : this.state.state,
+              zipCode : this.state.zipcode,
+              country : this.state.country
+                     }
+      }; 
+      const signUp = JSON.stringify(SignUp)
+
+      console.log(signUp)
+      fetch('https://on-cloud-web-service.azurewebsites.net/web/signup',{
                 method : 'POST',
                 headers : 
                 {
                     'Accept' : 'application/json',
                     'Content-Type' : 'application/json'
                 },
-                body: signUp
-            }).then(res => res.json()
-            ).then(data => console.log(data))
+                body:signUp
+            }).then(res => {
+
+              console.log(res)
+
+              const statusCode = res.status;
+              if(statusCode === 200) alert('Successfully Registered')
+              else {
+              const data = res.json();
+              return Promise.all([statusCode, data]);
+              }
+            }
+            ).then(data => {
+             if  (data==null)
+             {
+              console.log(data)
+
+             } else {
+              console.log(data)
+
+              if(data[0] === 400){
+
+                alert(data[1].details)
+              } else {
+                alert(data)
+              }
         }
     }
+    );
+}
+        }
     render() { 
         return ( 
             <div>
@@ -202,10 +237,10 @@ class SignUpDemo extends Component {
                     <br></br><br></br>
                     <label htmlFor="country">Country  :</label>
                     <select name="country" value = {this.state.country} onChange = {(event) => this.handlecountry(event)} id="cntry">
-                        <option defaultValue ="usa">USA</option>
-                        <option value="india">INDIA</option>
-                        <option value="australia">AUSTRALIA</option>
-                        <option value="canada">CANADA</option>
+                        <option defaultValue ="USA">USA</option>
+                        <option value="INDIA">INDIA</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="CANADA">CANADA</option>
                     </select><br></br><br></br>
                     <label htmlFor="pw" className = "password">Password:</label>
                     <input type="password" id="pw" onChange = {(event) => this.handlepassword(event)}

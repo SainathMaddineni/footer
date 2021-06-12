@@ -11,7 +11,7 @@ import AboutUs from './components/about us';
 import ContactUs from './components/contact us';
 import LogIn from './components/login';
 import Footer from './components/footer';
-import SignUpDemo from './components/signup';
+import SignUpDemo from './components/newsignup';
 import ForgetPassword from './components/forgetpassword'
 import Service from './components/service';
 

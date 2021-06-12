@@ -58,7 +58,7 @@ class LogIn extends Component {
         const login = JSON.stringify(loginObj)
         if (isValid){
             this.props.history.push("/service");
-            fetch('http://localhost:8080/web/login',{
+            fetch('https://on-cloud-web-service.azurewebsites.net/web/login',{
                 method : 'POST',
                 headers : 
                 {

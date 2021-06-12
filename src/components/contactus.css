@@ -32,7 +32,7 @@
       margin-left:50px;
       padding-left:50px;
       width:calc(100% - 600px);
-      height:75%;
+      height:95%;
       box-shadow:0 60px 60px rgba(0,0,0,0.5);
   }
   .contactform h2{
@@ -111,7 +111,7 @@
       background-color: #ff568c;
   }
   .lctncomBox{
-      height:450px;
+      height:400px;
       width:300px;
       position:absolute;
       margin-top:680px;
@@ -121,13 +121,13 @@
       float:left;
   }
   .emailcon{
-      margin-left:100px;
+      margin-left:5%;
   }
   .locationcon{
-    margin-left:630px;
+    margin-left:38%;
   }
   .phonecon{
-    margin-left:1120px;
+    margin-left:70%;
   }
   .contactimg{
       height:100px;
@@ -164,7 +164,7 @@
       text-align:center;
   }
   .lctncomBox:hover{
-      height:470px;
+      height:420px;
       width:320px;
       transition: 0.8s;
   }
@@ -172,6 +172,26 @@
       border-radius:1000px;
       transition: 0.8s;
   }
+  .lefterror{
+      margin-left:-30%;
+      margin-top:7%;
+      font-size:12px;
+      color:red;
+
+  }
+  .centererror{
+    margin-top:-7%;
+    font-size:12px;
+    margin-left:38%;
+    color:red;
+  }
+  .righterror{
+    margin-left:-28%;
+    margin-top:7%;
+    font-size:12px;
+    color:red;
+}
+ 
   @media only screen and (min-device-width: 320px) and (max-device-width: 900px){
     .locbox{
         height:0vh;
