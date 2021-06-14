@@ -104,7 +104,7 @@ class ContactUs extends Component {
               console.log(res)
 
               const statusCode = res.status;
-              if(statusCode === 200) alert('Successfully Registered')
+              if(statusCode === 200) alert('ThankYou We Will Contact You Soon')
               else {
               const data = res.json();
               return Promise.all([statusCode, data]);

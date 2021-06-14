@@ -138,6 +138,87 @@ dialog {
   max-width: 500px;
   margin-left:45%;
 }
+.project_container{
+  position: relative;
+  width: 70%;
+  margin: auto;
+  opacity:0.7;
+  margin-top:4%;
+  height:60vh;
+  border:1px solid white;
+  border-radius: 20px;
+  background: url("/images/serv.jpg");
+}
+.project_container a{
+  text-decoration: black;
+  font-family: 'Lato', sans-serif;
+  color:black;
+}
+.project_textcontainer{
+  position: relative;
+  height:30vh;
+  margin:5%;
+  width:75%;
+}
+.project_textcontainer p{
+  font-size:20px;
+  margin-top:1%;
+  font-display: initial;
+  font-weight: initial;
+}
+.project_textcontainer h6{
+  margin:1%;
+  font-size:15px;
+}
+.project_textcontainer h5{
+  font-size: large;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: initial;
+  text-decoration: #000;
+}
+.custom-btn {
+  float:right;
+  width: 130px;
+  height: 40px;
+  padding: 8px 35px;
+  border: 2px solid #000;
+  border-radius:20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  margin:10%;
+  margin-top:1%;
+  
+}
+.btn-10 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.btn-10:hover {
+  color: #fff;
+}
+.btn-10:hover:after {
+  background: #000;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 900px){
   .services-box1 {
     width: 33.33%;

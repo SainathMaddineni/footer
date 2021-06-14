@@ -139,7 +139,7 @@ select {
   #showcase img{
     position:relative;
     height:100vh;
-    width:100vw;
+    width:100%;
   }
   .cbox{
     width:700px;
@@ -186,14 +186,14 @@ select {
   .mimg{
     width:300px;
     height:150px;
-    margin-left:1000px;
-    top:980px;
+    margin-left:65%;
+    top:150%;
     position:absolute; 
   }
   .vimg{
     width:200px;
-    margin-left:220px;
-    top:1000px;
+    margin-left:15%;
+    top:150%;
     position:absolute;
   }
   .bgimg{
@@ -205,8 +205,8 @@ select {
     height:200px;
     width:500px;
     float:left;
-    top:1120px;
-    margin-left:80px;
+    top:170%;
+    margin-left:6%;
     position:absolute;
     border-radius:5px;
   }
@@ -220,8 +220,8 @@ select {
   .mbox{
     height:200px;
     width:500px;
-    top:1120px;
-    margin-left:900px;
+    top:172%;
+    margin-left:58%;
     position:absolute;
   }
   .mbox p{

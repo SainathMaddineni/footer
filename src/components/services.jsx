@@ -8,6 +8,15 @@ class Services extends Component {
       <div className="servicebox">
         <div className="serives">
           <h2>Our Services</h2>
+        <div className = "project_container">
+        <div className = "project_textcontainer">
+          <h5>LOOK UP OUR DEMO PROJECT</h5>
+          <p>We are created the Educational System related WebApplication</p>
+          <h6>Click Launch Button to launch Our Project</h6>
+        </div>
+        <a href="https://www.sloperateinc.com/home"  target="_blank"className ="custom-btn btn-10">Launch</a>
+        
+        </div>
         </div>
         <div className="row">
           <div className="services-box1">
@@ -85,6 +94,7 @@ class Services extends Component {
               <label htmlFor="toggleo">close</label>
             </dialog>
           </div>
+
         </div>
       </div>
     );
