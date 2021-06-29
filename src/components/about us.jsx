@@ -24,8 +24,9 @@ class AboutUs extends Component {
               </div>
             </div>
             <div className="company-text">
-              <p>
-              </p>
+        
+              <h1 class="heading-description">Description</h1>
+              <p class="description">lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis ipsam voluptas sed dolorum quam alias doloribus quidem, itaque, dignissimos iste et exercitationem corrupti porro ducimus inventore! Totam, eum placeat quaerat fugiat autem nisi dolor commodi sapiente, laudantium ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis ipsam voluptas sed dolorum quam alias doloribus quidem, itaque, dignissimos iste et exercitationem corrupti porro ducimus inventore! Totam, eum placeat quaerat fugiat autem nisi dolor commodi sapiente, laudantium sit sint quisquam reiciendis maxime ab! Sunt alias similique dolor nesciunt eveniet!</p>
             </div>
           </fieldset>
           </div>
