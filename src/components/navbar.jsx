@@ -19,7 +19,7 @@ class NavBar extends Component {
                                 <Link to = "/contactus"  id = "headerlink">CONTACT US</Link>
                                 <Link to = "/aboutus"  id = "headerlink">ABOUT US</Link>
                                 <Link to = "/services" id = "headerlink">SERVICES</Link>
-                                <Link to = "/home" id = "headerlink">HOME</Link>
+                                <Link to = "/" id = "headerlink">HOME</Link>
                             </ul>
                         </nav>
                         </div>
