@@ -19,15 +19,6 @@ class Home extends Component {
             needs....</p>
         </div>
           </section>
-          <section id = "newsletter">
-            <div className ="container1" id = "container1input">
-              <h1> Subscribe to our news update</h1>
-              <form>
-                <input type ="email" placeholder="Enter email"/>
-                <button type="submit" className ="button_1">Subscribe</button>
-                </form>
-                </div>
-            </section>
             <section id="boxes">
               <div className="container1">
               <div>
@@ -52,6 +43,15 @@ class Home extends Component {
                 </div>
                   </div>
                   </section>
+                  <section id = "newsletter">
+            <div className ="container1" id = "container1input">
+              <h1> Subscribe to our news update</h1>
+              <form>
+                <input type ="email" placeholder="Enter email"/>
+                <button type="submit" className ="button_1">Subscribe</button>
+                </form>
+                </div>
+            </section>
             </div>
         </div>
         );
