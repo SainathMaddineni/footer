@@ -45,7 +45,7 @@ class Home extends Component {
                   </section>
                   <section id = "newsletter">
             <div className ="container1" id = "container1input">
-              <h1> Subscribe to our news update</h1>
+              <h1> Subscribe to our new updates</h1>
               <form>
                 <input type ="email" placeholder="Enter email"/>
                 <button type="submit" className ="button_1">Subscribe</button>
