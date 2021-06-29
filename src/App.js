@@ -21,7 +21,7 @@ function App() {
       <Router>
         <NavBar/>
       <Switch>
-      <Route path="/home" exact strict component = {Home}/>
+      <Route path="/" exact strict component = {Home}/>
       <Route path="/services" exact strict  component = {Services}/>
       <Route path="/aboutus"  exact strict component = {AboutUs}/>
       <Route path="/contactus" exact strict  component = {ContactUs}/>
