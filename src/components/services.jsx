@@ -88,10 +88,12 @@ class Services extends Component {
 
             <dialog>
               <p>other services</p>
+              
 
               <label htmlFor="toggleo">close</label>
             </dialog>
           </div>
+          
 
         </div>
       </div>
