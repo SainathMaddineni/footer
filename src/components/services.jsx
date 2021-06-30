@@ -94,7 +94,6 @@ class Services extends Component {
               <label htmlFor="toggleo">close</label>
             </dialog>
           </div>
-
         </div>
       </div>
     );
