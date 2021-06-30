@@ -85,16 +85,11 @@ class Services extends Component {
             <h3>School Book/Other Services</h3>
             <input type="checkbox" id="toggleo" />
             <label htmlFor="toggleo">Load More</label>
-
             <dialog>
               <p>other services</p>
-              
-
               <label htmlFor="toggleo">close</label>
             </dialog>
           </div>
-          
-
         </div>
       </div>
     );
