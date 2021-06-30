@@ -16,8 +16,8 @@ class NavBar extends Component {
                             <ul>
                                 <Link to = "/signup"id = "headerlink" >SIGNUP</Link>
                                 <Link to = "/login" id = "headerlink">LOGIN</Link>
-                                <Link to = "/contactus"  id = "headerlink">CONTACT US</Link>
-                                <Link to = "/aboutus"  id = "headerlink">ABOUT US</Link>
+                                <Link to = "/contactus" id = "headerlink">CONTACTUS</Link>
+                                <Link to = "/aboutus"  id = "headerlink">ABOUTUS</Link>
                                 <Link to = "/services" id = "headerlink">SERVICES</Link>
                                 <Link to = "/" id = "headerlink">HOME</Link>
                             </ul>

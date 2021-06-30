@@ -12,6 +12,15 @@ class Home extends Component {
           <img  src = "/images/i.jpg" alt = "img not found"/>
           <h1> Predict the future with innovative techonologies.....</h1>
         </div>
+        <section id = "newsletter">
+            <div className ="container1" id = "container1input">
+              <h1> Subscribe to our news update</h1>
+              <form>
+                <input type ="email" placeholder="Enter email"/>
+                <button type="submit" className ="button_1">Subscribe</button>
+                </form>
+                </div>
+            </section>
         <div className = "cbox" id = "cboxid">
           <p  id = "para">Software innovation,Like almost every other kind of
             innovation,requires the ability to collaborate and share ideas with other people,
