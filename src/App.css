@@ -57,6 +57,7 @@ header :link{
   text-align: center;
   width:110px;
   height:100px;
+  text-decoration: none;
     }
   header #branding{
     float:left;
@@ -64,6 +65,7 @@ header :link{
   }
   header #branding h1{
     margin:0;
+    
     }
     header nav {
       float:right;
@@ -79,6 +81,8 @@ header :link{
   header a:hover{
     color:#cccccc;
     font-weight:bold;
+    text-decoration: underline;
+    text-decoration-color: orangered;
   }
   .container{
     width:auto;

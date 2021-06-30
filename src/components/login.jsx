@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Service from './service'; 
+
 import './login.css';
 //import axios from 'axios';
 //import logInAccount from '../services/login_service';
@@ -12,6 +14,8 @@ const initialState = {
     password : "",
     usernameError : "",
     passwordError : "",
+    login : false,
+    store : null
 }
 
 class LogIn extends Component {
@@ -19,6 +23,18 @@ class LogIn extends Component {
     constructor () {
         super()
         this.validate = this.validate.bind(this);
+    }
+    componentDidMount(){
+       this.storeCollector()
+    }
+    storeCollector(){
+        let storage = JSON.parse(localStorage.getItem('login'));
+        if(storage && storage.login){
+             this.setState({login:true,store:storage})
+        }
+    }
+    handletransfer = () =>{
+        this.props.history.push("/services");
     }
     handleUserName = (event) =>{
         this.setState({emailAddress : event.target.value});
@@ -57,7 +73,6 @@ class LogIn extends Component {
         }
         const login = JSON.stringify(loginObj)
         if (isValid){
-            this.props.history.push("/service");
             fetch('https://on-cloud-web-service.azurewebsites.net/web/login',{
                 method : 'POST',
                 headers : 
@@ -69,13 +84,23 @@ class LogIn extends Component {
             }).then(res => 
                 {
                     console.log(res);
-                });
+                    if(res.status === 200){
+                        localStorage.setItem('login',JSON.stringify({
+                            login:true,
+                            text:res.text
+                        }))
+                        this.props.history.push("/service");
+                    }
+                })
             console.log(login);
         }
     }
     render() { 
         return (
+           
             <div>
+                 {
+                    !this.state.login? 
                 <div className = "body">
                 <div className ="containerlogin">
                     <div className = "imagebox">
@@ -110,6 +135,11 @@ class LogIn extends Component {
                     </div>
                 </div>
                 </div>
+                :
+                <div>
+                    <Service/>
+                </div>
+    }
                 </div>
           );
     }
