@@ -14,7 +14,7 @@ class Services extends Component {
           <p>We are created the Educational System related WebApplication</p>
           <h6>Click Launch Button to launch Our Project</h6>
         </div>
-        <a href="https://www.sloperateinc.com/home"  target="_blank"className ="custom-btn btn-10">Launch</a>
+        <a href="https://www.sloperateinc.com/home"  rel="noopener noreferrer" target="_blank"className ="custom-btn btn-10">Launch</a>
         
         </div>
         </div>

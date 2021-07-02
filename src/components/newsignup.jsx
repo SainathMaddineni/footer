@@ -199,7 +199,7 @@ class SignUpDemo extends Component {
             <div>
             <div className="row">
                 <div className="column">
-                    <img  className = "signup_img" src="/images/emp.png"  alt = "img not found"/>
+                    <img  className = "signup_img" src="/images/sam2.png"  alt = "img not found"/>
                 </div>
                 <div className="column1">
                 <div className = "container10">
