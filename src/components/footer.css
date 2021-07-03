@@ -1,0 +1,49 @@
+/*.footer{
+    padding:20px;
+    color:#ffffff;
+    background-color:#e8491d;
+    text-align: center;
+  }
+  
+  .footercss{
+    position:relative;
+    top:800px;
+  }*/
+
+  .footercont{
+    border: thistle;
+    box-sizing: border-box;
+    display: flex;
+    height: 400px;
+    /* margin-bottom: 50px; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    color: white; 
+    background-color: black; 
+    /* #ecf0f1 */
+    margin-top: 0%;
+  }
+
+  .footercont .footeraddress{
+      /* border: 1px solid black; */
+      width: 25%;
+      padding: 2%;
+  }
+  .footercont .contactus{
+    width: 25%;
+    padding: 2%;
+  }
+
+  .footercont .company{
+    /* border-left: 1px solid darkgray; */
+    width: 25%;
+    padding: 2%;
+  }
+
+  .footercont .services{
+    /* border-left: 1px solid darkgray; */
+    width: 25%;
+    padding: 2%;
+  }
+
+
