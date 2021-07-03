@@ -19,15 +19,6 @@ class Home extends Component {
             needs....</p>
         </div>
           </section>
-          <section id = "newsletter">
-            <div className ="container1" id = "container1input">
-              <h1> Subscribe to our news update</h1>
-              <form>
-                <input type ="email" placeholder="Enter email"/>
-                <button type="submit" className ="button_1">Subscribe</button>
-                </form>
-                </div>
-            </section>
             <section id="boxes">
               <div className="container1">
               <div>
@@ -44,7 +35,7 @@ class Home extends Component {
                 <div className="box">
                   <img src="/images/mission_1.png" className = "mimg" alt = "img not found"/>
                   <div className= "mbox">
-                    <p>It is through our passion and commitment to our clients what we develop software
+                    <p>It is through our passion & commitment to our clients what we develop software
                       to face real-world challenges.</p>
                     <p>It is for our love and dedication to what we do that enables us to become a better company
                       for ourselves,for clients,our community and the world</p>
