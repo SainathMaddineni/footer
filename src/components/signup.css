@@ -7,30 +7,39 @@
     margin-left:-305px;
   }
   .column {
-    margin-top:40px;
+    margin-top:10px;
     float: left;
     width: 50%;
-    height: 120vh;    
+    height: 120vh;  
+    background-color:rgba(164,206,227,255);   
      /* Should be removed. Only for demonstration */
   }
+  .row
+  {
+    margin-top:0px;
+    background-color:rgba(164,206,227,255); 
+    }
   .column1 {
     margin-top:10px;
     float: left;
     width: 50%;
     height: 120vh;
+    background-color:rgba(164,206,227,255);  
      /* Should be removed. Only for demonstration */
   }
   .signup_img{
-    height :75vh;
-    width : 50vw;
+    height :70vh;
+    width : 40vw;
     position : relative;
+    background-color:rgba(164,206,227,255); 
+    margin-top:40px;
   }
   .container10{
     border:1px solid orangered;
     box-shadow: 3px 3px #333;
     border-radius: 5px;
     width:600px;
-    height:100vh;
+    height:95vh;
     padding:5px;
     margin-top:40px;
     position : relative;
