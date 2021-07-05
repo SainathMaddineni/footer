@@ -92,7 +92,8 @@ header :link{
   
   .container1{
     width:100%;
-    margin :0 auto;
+    /* margin :0 auto; */
+    margin-bottom: -1%;
     overflow:hidden;
   }
   .button_1{
