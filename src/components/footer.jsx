@@ -7,11 +7,10 @@ class Footer extends Component {
     return (
       <div>
     <div className = "footercont" id = "footcont">
-<div  className = "footeraddress" id = "address">
+  <div  className = "footeraddress1" id="add">
 
                         <h2 style={{color:"#b71540"}}>Address</h2><br/>
-              
-                        <address>
+                        <add>
                           Lotus Appartments,<br/>
                           Vijayawada, Andhra Pradesh,<br/>
                           India - 520015<br/><br/>
@@ -19,9 +18,8 @@ class Footer extends Component {
                           +91 8500298398<br/><br/>
                           For Job & Hiring<br/>
                           jobs@sloperateinc.com<br/><br/>
-                        </address>
-
-                    </div>
+                        </add>
+  </div>
 <div  className = "contactus" id = "contact">
 
                         <h2 style={{color:"#b71540"}}>Contact Us</h2><br/>
@@ -33,8 +31,7 @@ class Footer extends Component {
                           For Business & Sales<br/>
                           admin@sloperateinc.com<br/>
                         </contact>
-
-                    </div>
+</div>
                     <div  className = "company">
 
                         <h2 style={{color:"#b71540"}}>Company</h2><br/>
