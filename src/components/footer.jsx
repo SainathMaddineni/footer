@@ -11,7 +11,7 @@ class Footer extends Component {
 
                         <h2 style={{color:"#b71540"}}>Address</h2><br/>
                         <add>
-                          Lotus Appartments,<br/>
+                          Lotus Enclave,<br/>
                           Vijayawada, Andhra Pradesh,<br/>
                           India - 520015<br/><br/>
                           HR - Contact<br/>
