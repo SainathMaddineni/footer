@@ -1,0 +1,38 @@
+
+  .footercont{
+    border: thistle;
+    box-sizing: border-box;
+    display: flex;
+    height: 400px;
+    /* margin-bottom: 50px; */
+    /* font-style:oblique; */
+      font-family: 'Times New Roman', Times, serif;
+      /* 'Roboto',sans-serif */
+    color: white; 
+    background-color: black; 
+    margin-top: 0%;
+  }
+
+  .footercont .footeraddress1{
+      /* border: 1px solid black; */
+      width: 25%;
+      padding: 2%;
+  }
+  .footercont .contactus{
+    width: 25%;
+    padding: 2%;
+  }
+
+  .footercont .company{
+    /* border-left: 1px solid darkgray; */
+    width: 25%;
+    padding: 2%;
+  }
+
+  .footercont .services{
+    /* border-left: 1px solid darkgray; */
+    width: 25%;
+    padding: 2%;
+  }
+
+
