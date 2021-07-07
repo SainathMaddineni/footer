@@ -7,9 +7,8 @@ class Footer extends Component {
     return (
       <div>
     <div className = "footercont" id = "footcont">
-  <div  className = "footeraddress1" id="add">
-
-                        <h2 style={{color:"#b71540"}}>Address</h2><br/>
+ <div  className = "footeraddress1" id="add">
+      <h2 style={{color:"#b71540"}}>Address</h2><br/>
                         <p>
                           Lotus Enclave,<br/>
                           Vijayawada, Andhra Pradesh,<br/>
@@ -21,8 +20,7 @@ class Footer extends Component {
                         </p>
   </div>
 <div  className = "contactus" id = "contact">
-
-                        <h2 style={{color:"#b71540"}}>Contact Us</h2><br/>
+     <h2 style={{color:"#b71540"}}>Contact Us</h2><br/>
                         <p>
                           Sales:<br/><br/>
                           India: +91 8500 298 398<br/>
@@ -31,22 +29,18 @@ class Footer extends Component {
                           For Business & Sales<br/>
                           admin@sloperateinc.com<br/>
                         </p>
-</div>
-                    <div  className = "company">
-
-                        <h2 style={{color:"#b71540"}}>Company</h2><br/>
+  </div>
+ <div  className = "company">
+      <h2 style={{color:"#b71540"}}>Company</h2><br/>
                         <p>
                           About Us<br/>
                           Ourclients <br/>
                           Portfolio <br/> 
                           Life at SRTPL<br/>
                         </p>
-
-                    </div>
-
-                    <div  className = "services">
-
-                        <h2 style={{color:"#b71540"}}>Services</h2><br/>
+  </div>
+<div  className = "services">
+       <h2 style={{color:"#b71540"}}>Services</h2><br/>
                         <p>
                           Web Development<br/>
                           Mobile Development(Android/IOS) <br/>
@@ -54,11 +48,9 @@ class Footer extends Component {
                           Artificial Innovation<br/>
                           Business Design<br/>
                         </p>
-
-                    </div>
-                    </div>
-      
-                            <section id = "newsletter">
+  </div>
+</div>
+            <section id = "newsletter">
                             <div className ="container1" id = "container1input">
               <h1> Subscribe to our new updates </h1>
               <form>
