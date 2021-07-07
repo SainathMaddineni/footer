@@ -10,7 +10,7 @@ class Footer extends Component {
   <div  className = "footeraddress1" id="add">
 
                         <h2 style={{color:"#b71540"}}>Address</h2><br/>
-                        <add>
+                        <p>
                           Lotus Enclave,<br/>
                           Vijayawada, Andhra Pradesh,<br/>
                           India - 520015<br/><br/>
@@ -18,42 +18,42 @@ class Footer extends Component {
                           +91 8500298398<br/><br/>
                           For Job & Hiring<br/>
                           jobs@sloperateinc.com<br/><br/>
-                        </add>
+                        </p>
   </div>
 <div  className = "contactus" id = "contact">
 
                         <h2 style={{color:"#b71540"}}>Contact Us</h2><br/>
-                        <contact>
+                        <p>
                           Sales:<br/><br/>
                           India: +91 8500 298 398<br/>
                           USA: +1 502 654 2695<br/>
                           Canada: +1 647 324 9223<br/> <br/>
                           For Business & Sales<br/>
                           admin@sloperateinc.com<br/>
-                        </contact>
+                        </p>
 </div>
                     <div  className = "company">
 
                         <h2 style={{color:"#b71540"}}>Company</h2><br/>
-                        <comp>
+                        <p>
                           About Us<br/>
                           Ourclients <br/>
                           Portfolio <br/> 
                           Life at SRTPL<br/>
-                        </comp>
+                        </p>
 
                     </div>
 
                     <div  className = "services">
 
                         <h2 style={{color:"#b71540"}}>Services</h2><br/>
-                        <serv>
+                        <p>
                           Web Development<br/>
                           Mobile Development(Android/IOS) <br/>
                           Analytics Design <br/> 
                           Artificial Innovation<br/>
                           Business Design<br/>
-                        </serv>
+                        </p>
 
                     </div>
                     </div>
