@@ -79,7 +79,7 @@ class ContactUs extends Component {
         e.preventDefault();
         const isValid = this.validate();
         if (isValid){
-            console.log('iam valid')
+            console.log('i am valid')
             const ContactUs = 
             {
                 firstName : this.state.firstname,

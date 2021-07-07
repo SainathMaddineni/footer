@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './footer.css';
 
+
 class Footer extends Component {
   state = {};
   render() {
@@ -57,7 +58,6 @@ class Footer extends Component {
 
                     </div>
                     </div>
-      
                             <section id = "newsletter">
                             <div className ="container1" id = "container1input">
               <h1> Subscribe to our new updates </h1>
