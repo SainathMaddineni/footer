@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './footer.css';
 
+
 class Footer extends Component {
   state = {};
   render() {
@@ -39,7 +40,7 @@ class Footer extends Component {
                           Life at SRTPL<br/>
                         </p>
   </div>
-<div  className = "services">
+ <div  className = "services">
        <h2 style={{color:"#b71540"}}>Services</h2><br/>
                         <p>
                           Web Development<br/>
@@ -51,7 +52,7 @@ class Footer extends Component {
   </div>
 </div>
             <section id = "newsletter">
-                            <div className ="container1" id = "container1input">
+              <div className ="container1" id = "container1input">
               <h1> Subscribe to our new updates </h1>
               <form>
                 <input type ="email" placeholder="Enter email"/>

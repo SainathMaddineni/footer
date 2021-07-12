@@ -14,8 +14,7 @@ class Services extends Component {
           <p>We are created the Educational System related WebApplication</p>
           <h6>Click Launch Button to launch Our Project</h6>
         </div>
-        <a href="https://www.sloperateinc.com/home" rel="noopener noreferrer" target="_blank"className ="custom-btn btn-10">Launch</a>
-        
+        <a rel="noopener noreferrer" href="http://www.sloperateinc.com/" target="_blank"className ="custom-btn btn-10">Launch</a>
         </div>
         </div>
         <div className="row">
@@ -27,7 +26,6 @@ class Services extends Component {
 
             <dialog>
               <p>web developement</p>
-
               <label htmlFor="toggle">close</label>
             </dialog>
           </div>
@@ -87,10 +85,8 @@ class Services extends Component {
             <h3>School Book/Other Services</h3>
             <input type="checkbox" id="toggleo" />
             <label htmlFor="toggleo">Load More</label>
-
             <dialog>
               <p>other services</p>
-
               <label htmlFor="toggleo">close</label>
             </dialog>
           </div>

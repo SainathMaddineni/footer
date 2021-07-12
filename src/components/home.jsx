@@ -7,14 +7,14 @@ class Home extends Component {
         return (
             <div>
             <div>
-                <section id = "showcase">
+            <section id = "showcase">
         <div>
           <img  src = "/images/i.jpg" alt = "img not found"/>
           <h1> Predict the future with innovative techonologies.....</h1>
         </div>
         <div className = "cbox" id = "cboxid">
           <p  id = "para">Software innovation,Like almost every other kind of
-            innovation,requires the ability to collaborate and share ideas with other people,
+            innovation,requires the ability  collaborate and share ideas with other people,
             and to sit down and talk with customers and get their feedback and understand their
             needs.....</p>
         </div>

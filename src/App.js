@@ -14,14 +14,17 @@ import Footer from './components/footer';
 import SignUpDemo from './components/newsignup';
 import ForgetPassword from './components/forgetpassword'
 import Service from './components/service';
+import IdleTimerContainer from './components/idleTimerContainer';
+import CarrerControl from './components/carrercontrol';
 
 function App() {
   return (
     <div>
+      <IdleTimerContainer></IdleTimerContainer>
       <Router>
         <NavBar/>
       <Switch>
-      <Route path="/home" exact strict component = {Home}/>
+      <Route path="/" exact strict component = {Home}/>
       <Route path="/services" exact strict  component = {Services}/>
       <Route path="/aboutus"  exact strict component = {AboutUs}/>
       <Route path="/contactus" exact strict  component = {ContactUs}/>
@@ -29,6 +32,7 @@ function App() {
       <Route path="/signup"  exact strict  component = {SignUpDemo}/>
       <Route path="/forgetpassword"  exact strict  component = {ForgetPassword}/>
       <Route path="/service"  exact strict  component = {Service}/>
+      <Route path="/carrercontrol"  exact strict  component = {CarrerControl}/>
       </Switch>
       </Router>
       <Footer/>

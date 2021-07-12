@@ -61,7 +61,7 @@
   .w100{
     width:100%;
   }
-  .inputBox input,textarea{
+  .inputBox input, .contactform textarea{
       width:100% !important;
       resize:none;
       padding:5px 0;

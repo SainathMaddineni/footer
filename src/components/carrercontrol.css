@@ -1,0 +1,83 @@
+
+.admincontainer {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  position: absolute;
+  top: 30%;
+  bottom: 2%;
+
+  width: 30%;
+  height: 100%;
+  
+  margin-left: 60%;
+  
+   box-shadow: 25px 10px 20px black;
+  background-color: black;
+  /* opacity: 0.8; */
+  border-radius: 35px;
+ }
+
+.admin  img
+{
+    height: 120vh;
+    width: 100%;
+}
+.admincontainer h1 {
+  font-size: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding:30px 10px;
+}
+.admincontainer p {
+  font-size: 19px;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  color: white;
+}
+.admincontainer input {
+  font-size: 16px;
+  padding: 10px 9px;
+  width: 60%;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 25%;
+  margin-bottom: 2%;
+}
+.admincontainer button {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  width: 35%;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+  letter-spacing: 1px;
+}
+.admincontainer textarea {
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 9px;
+  width: 60%;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  color: black
+}
+
+.admincontainer button:hover {
+  color: black;
+}
+.admincontainer input:hover {
+
+  font-size: 15px;
+  color: black;
+} 
