@@ -199,7 +199,7 @@ class SignUpDemo extends Component {
             <div>
             <div className="row">
                 <div className="column">
-                    <img  className = "signup_img" src="/images/emp.png"  alt = "img not found"/>
+                    <img  className = "signup_img" src="/images/sam2.png"  alt = "img not found"/>
                 </div>
                 <div className="column1">
                 <div className = "container10">
@@ -235,30 +235,28 @@ class SignUpDemo extends Component {
                     <div className = "leftnameerr">{this.state.stateError}</div>
                     <div className = "rightnameerr">{this.state.zipcodeError}</div>
                     <br></br><br></br>
-                    <label htmlFor="country">Country  :</label>
+                    <label htmlFor="country" className="country">Country  :</label>
                     <select name="country" value = {this.state.country} onChange = {(event) => this.handlecountry(event)} id="cntry">
                         <option defaultValue ="USA">USA</option>
                         <option value="INDIA">INDIA</option>
                         <option value="AUSTRALIA">AUSTRALIA</option>
                         <option value="CANADA">CANADA</option>
                     </select><br></br><br></br>
-                    <label htmlFor="pw" className = "password">Password:</label>
-                    <input type="password" id="pw" onChange = {(event) => this.handlepassword(event)}
-                         value = {this.state.password}name="password" required/><br></br><br></br>
+                    <label className="password">Password:</label>
+                    <input type="password"  onChange = {(event) => this.handlepassword(event)}
+                         value = {this.state.password}name="password" required/><br></br>
                          <div className = "specialnameerr1">{this.state.passwordError}</div>
-                         <br></br><br></br>
-                    <label htmlFor="pw" className = "password" >Confirm Password:</label>
+                         <br></br>
+                         <label htmlFor="pw" className ="password1">Confirm Password:</label>
                     <input type="password" onChange = {(event) => this.handleconfirmpassword(event)} 
-                    value = {this.state.confirmpassword} id="cpw" name="password" required/>
-                    <div className = "specialnameerr">{this.state.confirmpasswordError}</div>
-                    <br></br><br></br><br></br>
+                    value = {this.state.confirmpassword} name="password" required/>
+                    <div className = "specialnameerr">{this.state.confirmpasswordError}</div> <br></br> <br></br>
                     <label htmlFor="ml" className = "ml">Email:</label>
-                    <input type="email" onChange = {(event) => this.handleEmail(event)} 
-                    value = {this.state.email} id="ml" name="email" required/>
-                    <div className = "specialnameerr">{this.state.emailError}</div>
-                    <br></br><br></br>
-                    <label htmlFor="ph">Phone  :</label>
-                    <select name="country" id="ph">
+                    <input type="email"  onChange = {(event) => this.handleEmail(event)} 
+                    value = {this.state.email}  name="email" required/>
+                    <div className = "specialnameerr">{this.state.emailError}</div><br></br><br></br>
+                    <label htmlFor="ph" className="phone1">Phone:</label>
+                    <select name="country"  id="ph" >
                         <option defaultValue="+91">+91</option>
                         <option value="+1">+1</option>
                         <option value="+61">+61</option>
@@ -266,12 +264,11 @@ class SignUpDemo extends Component {
                     </select>
                     <input type ="phone" onChange = {(event) => this.handlenumber(event)} 
                         value = {this.state.contactnumber} id="phone" name="phone" required/>
-                        <div className = "specialnameerr">{this.state.phonenumberError}</div>
-                    <button className="button1" vlaue = "Next" 
-                        onClick={this.handleSubmit1}  ><span>submit</span></button>
-                    </div>
-
-                    <br></br>
+                        <div className = "specialnameerr">{this.state.phonenumberError}</div><br></br><br></br>
+                    <button className="button1" value = "Next" 
+                        onClick={this.handleSubmit1}><span>submit</span></button>
+                     <br></br>
+                </div>
                 </fieldset>
                 </form>
                     </div>

@@ -3,37 +3,43 @@
   }
   
   /* Create two equal columns that floats next to each other */
+  .country{
+    margin-left:-305px;
+  }
   .column {
-    margin-top:-30px;
+    margin-top:10px;
     float: left;
     width: 50%;
-    height: 120vh;
-    background-color:#222222;
-    background:repeating-linear-gradient(45deg,
-    #2b2b2b 0%,#2b2b2b 10%,#222222 50%)0/15px,15px
+    height: 120vh;  
+    background-color:rgba(164,206,227,255);   
      /* Should be removed. Only for demonstration */
   }
+  .row
+  {
+    margin-top:0px;
+    background-color:rgba(164,206,227,255); 
+    }
   .column1 {
-    margin-top:-30px;
+    margin-top:10px;
     float: left;
     width: 50%;
     height: 120vh;
-    background-color:#222222;
-    background:repeating-linear-gradient(45deg,
-    #2b2b2b 0%,#2b2b2b 10%,#222222 50%)0/15px,15px
+    background-color:rgba(164,206,227,255);  
      /* Should be removed. Only for demonstration */
   }
   .signup_img{
-    height :75vh;
-    width : 50vw;
+    height :70vh;
+    width : 40vw;
     position : relative;
+    background-color:rgba(164,206,227,255); 
+    margin-top:40px;
   }
   .container10{
     border:1px solid orangered;
     box-shadow: 3px 3px #333;
     border-radius: 5px;
     width:600px;
-    height:110vh;
+    height:95vh;
     padding:5px;
     margin-top:40px;
     position : relative;
@@ -71,7 +77,6 @@
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
   }
-  
 .leftnameerr{
     margin-left:100px;
     position:absolute;
@@ -91,24 +96,36 @@
     color:red;
 }
 .specialnameerr1{
-  margin-left:200px;
+  margin-left:100px;
   position:absolute;
   font-size:12px;
   color:red;
 }
 #pw{
   position:absolute;
-  margin-left:10px
+  margin-left:-150px;
 }
 #cpw{
   position:absolute;
   margin-left:10px
 
 }
+.s1{
+  margin-left:-100px;
+}
+.phone1{
+  position:absolute;
+ margin-left:-110px;
+
+}
 .password{
-  margin-left:-30vw;
+  margin-left:-310px;
+}
+.password1{
+  margin-left:-260px;
 }
 select {
+    margin-left:15px;
     width:180px;
     height:30px;
     background-color:lightslategrey ;
@@ -127,7 +144,7 @@ select {
   }
   .ml
   {
-    margin-left:-7vw;
+    margin-left:-50px;
   }
   #ml{
     margin-left:3.5vw;
@@ -139,11 +156,11 @@ select {
     margin-left:18px;
   }
   #ph{
-    width: 10%;
-    margin-left:15px;
+    margin-left:-60px;
+    width:10%;
   }
   #pw{
-    margin-left:38px;
+    margin-left:28px;
   }
   .center{
     float:left;
@@ -155,10 +172,10 @@ select {
       width:50%;
   }
   .container10 input[type = password]:focus{
-    width:50%;
+    width:30%;
 }
   .container10 input[type = password]{
-    margin-left:73px;
+    margin-left:10px;
   }
   .container10 input[type = email]{
     width:300px;
@@ -175,7 +192,7 @@ select {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    margin-left:230px;
+    margin-left:50px;
     margin-top:50px;
   }
   
@@ -307,7 +324,7 @@ select {
 .password{
   position:absolute;
   margin-top:20px;
-  margin-left:-40vw;
+  margin-left:5px;
 }
 #pw{
   margin-left:-60px;
@@ -352,7 +369,6 @@ select {
   margin-left:120px;
   margin-top:50px;
 }
-
   
 
-  }
+}

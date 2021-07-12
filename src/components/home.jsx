@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// import './footer.css';
 
 class Home extends Component {
     state = {  }
@@ -14,9 +14,9 @@ class Home extends Component {
         </div>
         <div className = "cbox" id = "cboxid">
           <p  id = "para">Software innovation,Like almost every other kind of
-            innovation,requires the ability to collaborate and share ideas with other people,
+            innovation,requires the ability  collaborate and share ideas with other people,
             and to sit down and talk with customers and get their feedback and understand their
-            needs....</p>
+            needs.....</p>
         </div>
           </section>
             <section id="boxes">
@@ -35,7 +35,7 @@ class Home extends Component {
                 <div className="box">
                   <img src="/images/mission_1.png" className = "mimg" alt = "img not found"/>
                   <div className= "mbox">
-                    <p>It is through our passion and commitment to our clients what we develop software
+                    <p>It is through our passion & commitment to our clients what we develop software
                       to face real-world challenges.</p>
                     <p>It is for our love and dedication to what we do that enables us to become a better company
                       for ourselves,for clients,our community and the world</p>
