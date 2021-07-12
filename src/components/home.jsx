@@ -7,7 +7,7 @@ class Home extends Component {
         return (
             <div>
             <div>
-                <section id = "showcase">
+            <section id = "showcase">
         <div>
           <img  src = "/images/i.jpg" alt = "img not found"/>
           <h1> Predict the future with innovative techonologies.....</h1>

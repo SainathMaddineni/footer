@@ -14,11 +14,13 @@ import Footer from './components/footer';
 import SignUpDemo from './components/newsignup';
 import ForgetPassword from './components/forgetpassword'
 import Service from './components/service';
+import IdleTimerContainer from './components/idleTimerContainer';
 import CarrerControl from './components/carrercontrol';
 
 function App() {
   return (
     <div>
+      <IdleTimerContainer></IdleTimerContainer>
       <Router>
         <NavBar/>
       <Switch>
