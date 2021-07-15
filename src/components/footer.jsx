@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import './footer.css';
+// import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 
 
 class Footer extends Component {
@@ -7,66 +9,75 @@ class Footer extends Component {
   render() {
     return (
       <div>
-    <div className = "footercont" id = "footcont">
- <div  className = "footeraddress1" id="add">
-      <h2 style={{color:"#b71540"}}>Address</h2><br/>
-                        <p>
-                          Lotus Enclave,<br/>
-                          Vijayawada, Andhra Pradesh,<br/>
-                          India - 520015<br/><br/>
-                          HR - Contact<br/>
-                          +91 8500298398<br/><br/>
-                          For Job & Hiring<br/>
-                          jobs@sloperateinc.com<br/><br/>
-                        </p>
-  </div>
-<div  className = "contactus" id = "contact">
-     <h2 style={{color:"#b71540"}}>Contact Us</h2><br/>
-                        <p>
-                          Sales:<br/><br/>
-                          India: +91 8500 298 398<br/>
-                          USA: +1 502 654 2695<br/>
-                          Canada: +1 647 324 9223<br/> <br/>
-                          For Business & Sales<br/>
-                          admin@sloperateinc.com<br/>
-                        </p>
-  </div>
- <div  className = "company">
-      <h2 style={{color:"#b71540"}}>Company</h2><br/>
-                        <p>
-                          About Us<br/>
-                          Ourclients <br/>
-                          Portfolio <br/> 
-                          Life at SRTPL<br/>
-                        </p>
-  </div>
- <div  className = "services">
-       <h2 style={{color:"#b71540"}}>Services</h2><br/>
-                        <p>
-                          Web Development<br/>
-                          Mobile Development(Android/IOS) <br/>
-                          Analytics Design <br/> 
-                          Artificial Innovation<br/>
-                          Business Design<br/>
-                        </p>
+      <div className = "footer-main">
+      <div className = "footer-main" >
+          <div  className = "footer-col">
+              <h2 style={{color:"#ff8c00"}}>Address</h2>
+              <p>
+                 Lotus Enclave,<br/>
+                 Vijayawada, Andhra Pradesh,<br/>
+                 India - 520015<br/><br/>
+                 HR - Contact<br/>
+                 +91 8500298398<br/><br/>
+                 For Job & Hiring<br/>
+                 jobs@sloperateinc.com<br/><br/>
+              </p>
+          </div>
+          <div  className = "footer-col">
+            <h2 style={{color:"#ff8c00"}}>Contact Us</h2>
+                <p>
+                   Sales:<br/><br/>
+                   India: +91 8500 298 398<br/>
+                   USA: +1 502 654 2695<br/>
+                   Canada: +1 647 324 9223<br/> <br/>
+                   For Business & Sales<br/>
+                   admin@sloperateinc.com<br/>
+                </p><br/>
+                {/* <h4>Follow us:</h4>
+                <ul style={{listStyleType:"none"}}>
+                  <li className="follow-list"><FaFacebook /></li>
+                  <li className="follow-list"><FaInstagram/></li>
+                  <li className="follow-list"><FaLinkedinIn/></li>
+                </ul> */}
+          </div>
+          <div  className = "footer-col">
+             <h2 style={{color:"#ff8c00"}}>Company</h2>
+             <p>
+                About Us<br/>
+                Ourclients <br/>
+                Portfolio <br/> 
+                Life at SRTPL<br/>
+             </p>
+          </div>
+          <div  className = "footer-col">
+            <h2 style={{color:"#ff8c00"}}>Services</h2>
+            <p>
+              Web Development<br/>
+              Mobile Development(Android/IOS) <br/>
+              Analytics Design <br/>
+              Artificial Innovation<br/>
+              Business Design<br/>
+            </p>
+          </div>
+     </div>
+     </div>
+    
+<div className = "footer-subscribe">
+<div className ="footer-subscribe1">
+  <h1> Subscribe to our new updates </h1>
+</div>
+<div className="footer-subscribe2">
+  <form>
+    <input type="email" className="sub-email" placeholder="Enter Your Email"/>
+    <button className="email-subscribe">Subscribe</button>
+  </form>
   </div>
 </div>
-            <section id = "newsletter">
-              <div className ="container1" id = "container1input">
-              <h1> Subscribe to our new updates </h1>
-              <form>
-                <input type ="email" placeholder="Enter email"/>
-                <button type="submit" className ="button_1">Subscribe</button>
-                </form>
-                </div>
-            </section>
-        <footer>
-            <p style={{textAlign: "center"}}>
-            Copyright © 2020 Slope Rate Techno Private Limited - All Rights
-            Reserved.{" "}
-            </p>
-        </footer>
-        </div>
+<div className="footer-copy">
+{/* eslint-disable-next-line */}
+<p>Copyright ©️ 2020 Slope Rate Techno Private Limited - All Rights Reserved.</p>
+</div>
+      </div>
     );
   }
 }

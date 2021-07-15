@@ -1,38 +1,102 @@
-
-  .footercont{
-    border: thistle;
-    box-sizing: border-box;
-    display: flex;
-    height: 400px;
-    /* margin-bottom: 50px; */
-    /* font-style:oblique; */
-      font-family: 'Times New Roman', Times, serif;
-      /* 'Roboto',sans-serif */
-    color: white; 
-    background-color: black; 
-    margin-top: 0%;
+.footer-main{
+  width: 100%;
+  color: #FDFCFB;
+  float: left;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  background-color: black;
+}
+.footer-col{
+  /* width: 25%; */
+  /* float: left; */
+  padding: 20px;
+  background-color: black;
+  /* height: 500px; */
+  color: #FDFCFB;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;;
+} 
+  .footer-subscribe{
+    width: 100%;
+    background-color: #737373;
+    color: #FDFCFB;
+    padding: 20px 10px ;
+    float: left;
   }
-
-  .footercont .footeraddress1{
-      /* border: 1px solid black; */
-      width: 25%;
-      padding: 2%;
+  .footer-subscribe1{
+    width: 70%;
+    float: left;
+    padding-left: 1.5%;
+    
   }
-  .footercont .contactus{
-    width: 25%;
-    padding: 2%;
+  .footer-subscribe2{
+    width: 30%;
+    float: left;
+    padding-top: 10px;;
   }
-
-  .footercont .company{
-    /* border-left: 1px solid darkgray; */
-    width: 25%;
-    padding: 2%;
+  .sub-email[type="email"] {
+    width: 60%;
+    background: #FDFCFB;
+    font-family: 'Times New Roman', Times, serif;
+    color: #737373;
+    letter-spacing: 1px;
+    border-radius: 5px 0 0 5px;
+    /* height: 30px; */
+    border: none;
+    max-width: 250px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: medium;
+    /* margin-bottom: 30px; */
   }
-
-  .footercont .services{
-    /* border-left: 1px solid darkgray; */
-    width: 25%;
-    padding: 2%;
+  
+  
+  .email-subscribe{
+    width: 30%;
+    background: #ff8c00;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    height: 30px;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    
   }
-
-
+    .follow-list{
+      float: left;
+      display: flex;
+      padding-left: 10px;
+      font-size: 20px;
+      color: #ff8c00;
+    }
+  
+  .email-subscribe:hover {
+    background: #000000;
+    color:#ff8c00;
+  }
+  .email-subscribe:focus{outline: none;}
+    
+  .sub-email:focus {
+    outline: none;
+  }
+  
+ .footer-copy{
+  width: 100%;
+  background-color: #ff8c00;
+  text-align: center;
+  margin: 0%!important;
+  /* padding: 100px; */
+  /* margin-top: 10000px; */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  /* margin-bottom: -500px; */
+}
