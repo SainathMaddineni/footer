@@ -1,0 +1,88 @@
+.predict{
+    background-image: url(/images/1bbg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .predict h1{
+    padding: 40px 45px 30px 45px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .predict p{
+    font-size:22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-style: oblique;
+    color:white;
+    font-weight: bold;
+    padding: 50px 45px 200px 45px;
+  }
+  .vi-mi-row{
+    background-image: url(/images/vimibg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .vi-mi-row{
+    width: 100%;
+    float: left;
+  }
+  .vi-mi-col{
+    width: 50%;
+    float: left;
+    /* z-index: 2; */
+  }
+  .vi-mi-col img{
+    margin: 2% 20% 1% 20%;
+    width: 60%;
+    height: 175px;;
+  }
+  .vi-mi-col img:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+  }
+  .vi-mi-col p{
+    font-size:20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    font-style: oblique;
+    color:white;
+    margin: 0 10% 10% 10%;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+  }
+.carousels{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-image: url(/images/clientbg.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+.carousels-col{
+    width: 25%;
+    float: left;
+    /* background-image: url(/images/clientbg.jpg);
+    background-position: center;
+    background-size: cover;  */
+    /* background-color: #214142; */
+}
+.carousels-col img{
+    width: 40%;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    /* padding: 10px 0px; */
+    margin:  30px 30% 20px 30%;
+}
+.carousels-col h3{
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
