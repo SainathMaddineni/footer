@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './footer.css';
-// import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 
 
@@ -32,13 +32,15 @@ class Footer extends Component {
                    Canada: +1 647 324 9223<br/> <br/>
                    For Business & Sales<br/>
                    admin@sloperateinc.com<br/>
-                </p><br/>
-                {/* <h4>Follow us:</h4>
+                </p>
+                <h4>Follow us:</h4>
                 <ul style={{listStyleType:"none"}}>
-                  <li className="follow-list"><FaFacebook /></li>
-                  <li className="follow-list"><FaInstagram/></li>
-                  <li className="follow-list"><FaLinkedinIn/></li>
-                </ul> */}
+                  <li className="follow-list"><a href="https://www.facebook.com/SlopeRateInc
+"><FaFacebook /></a></li>
+{/*  eslint-disable-next-line */}
+                  <li className="follow-list"><a href="#"><FaInstagram/></a></li>
+                  <li className="follow-list"><a href="https://www.linkedin.com/company/slope-rate-tech-private-limited"><FaLinkedinIn/></a></li>
+                </ul>
           </div>
           <div  className = "footer-col">
              <h2 style={{color:"#ff8c00"}}>Company</h2>
