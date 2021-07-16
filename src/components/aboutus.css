@@ -126,30 +126,53 @@
 .company-text {
   text-align: center;
   /* margin-top: 420px; */
-  text-align: justify;
-  text-indent: 50px;
-  border: 1px solid black;
-   float:right;
+  /* text-align: justify; */
+  /* text-indent: 50px; */
+  border: 2px solid black;
+   /* float:right; */
    display: inline;
-   height: 300px;
-   width: 800px;
-   margin-top: 70px;
-   margin-right: 70px;
-   padding: 5px;
+   height: 100%;
+   width: 60%;
+   margin:10%;
+   /* padding: 5px; */
    box-sizing: border-box;
    /* word-spacing: 10px;
    letter-spacing: 3px; */
+   
   }
+  .description
+  {
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: 0 auto;
+    padding: 3%;
+    font-weight: bold;
+    font-size: 120%;
+    color:black;
+
+  }
+ 
 .description::first-letter
 {
   text-transform:uppercase ;
   font-size: 40px;
   font-weight: bold;
 }
-.heading-description
+.descriptioncontainer
 {
   text-align: center;
+  
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background: -moz-linear-gradient(#648880, #293f50);
+  background: linear-gradient(#648880, #293f50);
+  
 }
+.heading-description
+{
+ 
+  padding-top: 2%;
+} 
 /* ending of keerthi try */
 
 

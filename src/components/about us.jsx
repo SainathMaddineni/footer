@@ -8,11 +8,18 @@ class AboutUs extends Component {
       <React.Fragment>
         <div>
           <div className = "aboutus">
-          <h2>About us</h2>
-        </div>
-        <div>
-          <fieldset className = "fieldbox">
-            <div className="ceo">
+            <h2>About us</h2>
+          </div>
+        <div className="descriptioncontainer">
+          {/* <fieldset className = "fieldbox">
+          <div className="company-text">
+         */}
+         
+        <h1 className="heading-description">Description</h1>
+
+        <p className="description">Our software development experience encompasses apps, big data, database and systems integrations, websites, dedicated client desks, membership systems, extensions of standard software, integrations of existing software systems, AI, Gaming, and many more. But our process of developing software always follows our development methodology.</p>
+      </div>
+            {/* <div className="ceo">
               <p className = "paragraph">Founder&CEO</p>
               <img src="/images/img.jpg" width="400" height="450" alt="ceo" />
               <div className="ceo-fadedbox">
@@ -22,14 +29,10 @@ class AboutUs extends Component {
                   Smanikanta@sloperateinc.com
                 </div>
               </div>
-            </div>
-            <div className="company-text">
-        
-              <h1 class="heading-description">Description</h1>
-              <p class="description">lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis ipsam voluptas sed dolorum  alias doloribus quidem, itaque, dignissimos iste et exercitationem corrupti porro ducimus inventore! Totam, eum placeat quaerat fugiat autem nisi dolor commodi sapiente, laudantium ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis ipsam voluptas sed dolorum quam alias doloribus quidem, itaque, dignissimos iste et exercitationem corrupti porro ducimus inventore! Totam, eum placeat quaerat fugiat autem nisi dolor commodi sapiente, laudantium sit sint quisquam reiciendis maxime ab! Sunt alias similique dolor nesciunt eveniet!</p>
-            </div>
-          </fieldset>
-          </div>
+            </div> */}
+            
+          {/* </fieldset>
+          </div> */}
         </div>
       </React.Fragment>
     );
