@@ -6,6 +6,7 @@
   /* align-items: center; */
   justify-content: space-between;
   background-color: black;
+  margin-top: -10px;
 }
 .footer-col{
   /* width: 25%; */
@@ -43,7 +44,8 @@
     color: #737373;
     letter-spacing: 1px;
     border-radius: 5px 0 0 5px;
-    /* height: 30px; */
+    height: 30px;
+    margin-top: 20px;
     border: none;
     max-width: 250px;
     padding-left: 10px;
@@ -77,6 +79,12 @@
       padding-left: 10px;
       font-size: 20px;
       color: #ff8c00;
+    }
+    .follow-list a{
+      color: #ff8c00;
+    }
+    .follow-list a :hover{
+      color: whitesmoke;
     }
   
   .email-subscribe:hover {

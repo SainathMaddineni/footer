@@ -54,7 +54,6 @@ class SignUp1 extends Component {
                     // const isValid = this.validate();
                     if(this.state.flag)
                     {
-                        window.location.reload(false);
 
                     const register = 
                     {
@@ -88,7 +87,7 @@ class SignUp1 extends Component {
                        {
                         
                           alert('Successfully Registered')
-                          
+                          window.location.reload(false);
                        }
                       else {
                       const data = res.json();

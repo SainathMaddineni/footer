@@ -8,7 +8,7 @@ import Home1 from './components/home1';
 import Services from './components/services';
 import AboutUs from './components/about us';
 import ContactUs from './components/contact us';
-import LogIn from './components/login';
+import MLogIn from './components/mlogin';
 import Footer from './components/footer';
 import SignUp1  from './components/signup1';
 import ForgetPassword from './components/forgetpassword'
@@ -27,7 +27,7 @@ function App() {
       <Route path="/services" exact strict  component = {Services}/>
       <Route path="/aboutus"  exact strict component = {AboutUs}/>
       <Route path="/contactus" exact strict  component = {ContactUs}/>
-      <Route path="/login"   exact strict component = {LogIn}/>
+      <Route path="/login"   exact strict component = {MLogIn}/>
       <Route path="/signup"  exact strict  component = {SignUp1}/>
       <Route path="/forgetpassword"  exact strict  component = {ForgetPassword}/>
       <Route path="/service"  exact strict  component = {Service}/>
