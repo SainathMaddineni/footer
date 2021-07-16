@@ -109,12 +109,12 @@ header :link{
     padding-right: 20px;
     color: #ffffff;
   }
-select {
+/* select {
     width:180px;
     height:30px;
     background-color:lightslategrey ;
     margin-left:20px;
-}
+} */
  
   footer{
     padding:20px;

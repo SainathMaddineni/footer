@@ -1,0 +1,112 @@
+.signup1container
+{
+background: linear-gradient( #cc2b5e,#753a88); 
+padding: 20px;
+}
+.signup1form
+{
+    background-color: white;
+    width: 35%;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 20px; 
+    padding-top: 20px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.40), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-sizing: border-box;
+}
+.signup1form .signupheading h1
+{
+ text-align: center;
+ margin-bottom: 50px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ color:black;
+}
+table tr td input
+{
+    border: 0;
+    border:1px solid crimson; 
+    border-radius: 5px;
+    padding: 3%; 
+    margin-top: 15px;
+    outline: none;
+    /* margin-left: 10px; */
+}
+table tr td textarea
+{
+    width: 80%;
+    border:1px solid crimson; 
+    border-radius: 5px;
+    padding: 1%;
+    outline: none;
+    margin-top: 15px;
+    /* margin-left: 10px; */
+}
+table tr td .lablestyle
+{
+    padding-left:40px;
+    font-size: 17px;
+    font-weight: bold;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+
+} 
+ .country
+{
+    width: 80%; 
+    padding: 6px;
+    border: 1px solid crimson;
+    border-radius: 8px;
+    /* margin-bottom: 3%; */
+    outline: none;  
+    margin-top: 15px;
+    /* margin-left: 10px; */
+}
+.signup1container button
+{
+    margin-left: 40%;
+    margin-top: 20px;
+    font-size: 150%;
+    padding: 1.8%;
+    margin-bottom: 20px;
+    background-color: crimson;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;  
+}
+.signuppara
+{
+    margin-left: 41%;
+    font-size: 16px;
+    color: black; 
+}
+.signuppn
+{
+    padding: 4px;
+    width: 24%;
+    border-radius: 8px;
+    border: 1px solid crimson;
+    outline: none; 
+
+}
+.signuppara a
+{
+ color:blue;
+ font-weight: bold;
+ font-size: 16px;
+ text-decoration: none;
+ }
+.phoneinput
+{
+    width: 53.57%;
+}
+.handlingerror
+{
+    font-size: 15px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
