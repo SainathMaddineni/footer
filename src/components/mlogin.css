@@ -83,8 +83,9 @@ input[type="submit"]{
     outline: none;
 }
 input[type="submit"]:hover{
-    border-color: #2691d9;
+    /* border-color: rgb(160, 154, 154); */
     transition: .5s;
+    border : 3px solid purple;
 }
 .pass{
     margin: 6%;
