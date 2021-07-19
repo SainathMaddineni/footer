@@ -12,7 +12,8 @@ class Mlogin extends Component {
         emailError: "",
         flag: true,
         login : false,
-        store : null
+        store : null,
+        isLoading : true
      }
      componentDidMount(){
         this.storeCollector()
@@ -48,6 +49,7 @@ class Mlogin extends Component {
         // const isValid = this.validate();
         this.handleEmail();
         if(this.state.flag){
+            this.setState({isLoading : false})
         const loginObj = {
             emailAddress : this.state.emailAddress,
             password : this.state.password
@@ -65,13 +67,14 @@ class Mlogin extends Component {
             }).then(res => 
                 {
                     console.log(res)
+                    this.setState({isLoading : this.state.flag})
                     const statusCode = res.status;
                     const data = res.json();
                     return Promise.all([statusCode, data]);
                 }).then(data => {
                           console.log(data)
                           if(data[0] === 200){
-                              
+
                           if(data[1].registerResponse === "Login Successfully"){
                             // window.location.reload(false);
                             localStorage.setItem('login',JSON.stringify({
@@ -82,16 +85,24 @@ class Mlogin extends Component {
                               this.props.history.push("/service");
                           }
                           else if(data[1].registerResponse === null){
-                              alert('Check your Email')
+                              alert('Invalid Username')
                           }
                         }
                         else if(data[0] === 400){
+                            if(data[1].details === "Password Mismatch"){
+                            alert('Invalid Password')
+                        }else{
                             alert(data[1].details)
+                        }
+                    }
+                        else{
+                            alert('Internal Server Error!!')
                         }
                   }
               ).catch(err => {
                 // Do something for an error here
                 console.log("Error Reading data " + err);
+                alert('Internal Server Error!!')
               });
           }         
         }          
@@ -131,7 +142,9 @@ class Mlogin extends Component {
             <span></span>
             <label>Password</label>
         </div>
-        <input type="submit" value="Login"/>
+        <input type="submit"
+        // {...this.state.isLoading ? 'value = Login' : 'value = Loading'}
+        value = {this.state.isLoading ? "Login" : "Loading..."}/>
         <div className="pass" onClick = {this.forgetfunction}>Forgot Password?</div>    
         <div className="signup_link">
         {/* eslint-disable-next-line */}
