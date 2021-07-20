@@ -71,12 +71,17 @@ table tr td .lablestyle
     font-size: 150%;
     padding: 1.8%;
     margin-bottom: 20px;
-    background-color: crimson;
+    background-color: #cc2b5e;
     font-weight: bold;
     border: 0;
     border-radius: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:white;  
+}
+.signup1container button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    
 }
 .signuppara
 {

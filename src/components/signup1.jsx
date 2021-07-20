@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./signup1.css";
+const mobileRe = new RegExp(/^[0-9]{10}$/);
 class SignUp1 extends Component {
     state = { 
             firstname :"",
@@ -9,11 +10,11 @@ class SignUp1 extends Component {
             password:"",
             address:"",
             pincode:"",
-            mobileNumber :"",
+            phonenumber :"",
             confirmpassword : "",
             confirmpasswordError:"",
-            flag:true
-            }
+            phoneError : ""
+                }
 
             handleError = () =>{
                 console.log("error handled called");
@@ -22,19 +23,27 @@ class SignUp1 extends Component {
                     let confirmpassworderror;
                     confirmpassworderror = "Both passwords Should Match";
                     this.setState({confirmpasswordError:confirmpassworderror})
-                    this.setState({flag:false})
-
-
+                    return false;
                 }
                 else { 
                     let confirmpassworderror;
                     confirmpassworderror = " ";
                     this.setState({confirmpasswordError: confirmpassworderror})
-                    this.setState({flag:true})
+                    return true;
+                }   
+            }
+            handlephoneerror = () =>{
+                if(!mobileRe.test(this.state.phonenumber))
+                {
+                    console.log('iam error in number')
+                     let phonenumberError="invalid phone number"
+                     this.setState({phoneError : phonenumberError})
+                     return false
+                }else {
+                    let phonenumberError=" "
+                    this.setState({phoneError : phonenumberError})
+                    return true
                 }
-
-
-
             }
 
             handlephonenumber = (event) =>{
@@ -50,9 +59,10 @@ class SignUp1 extends Component {
                     event.preventDefault();
                     this.handleError();
                     console.log(this.state.flag)
-
                     // const isValid = this.validate();
-                    if(this.state.flag)
+                    let flag = this.handleError();
+                    let flag2 = this.handlephoneerror();
+                    if(flag && flag2)
                     {
 
                     const register = 
@@ -79,42 +89,41 @@ class SignUp1 extends Component {
                         },
                         body:registerReq
                     }).then(res => {
-        
-                      console.log(res)
-        
-                      const statusCode = res.status;
-                      if(statusCode === 200)
-                       {
-                        
-                          alert('Successfully Registered')
-                          window.location.reload(false);
-                       }
-                      else {
-                      const data = res.json();
-                      return Promise.all([statusCode, data]);
-                      }
+                        console.log(res)
+                        const statusCode = res.status;
+                        const data = res.json();
+                        return Promise.all([statusCode, data]);
+
                     }
                     ).then(data => {
-                     if  (data==null)
-                     {
-                      console.log(data)
-        
-                     } else {
-                      console.log(data)
-        
-                      if(data[0] === 400){
-        
-                        alert(data[1].details)
-                      } else {
-                        alert(data)
-                      }
+                        console.log(data)
+                          if(data[0] === 200){
+                          if(data[1].registerResponse === "Congrats successfully completed registration")
+                          {
+                              alert('Registration Successfully')
+                              this.props.history.push("/login");
+                          }
+                          else if(data[1].registerResponse === null)
+                          {
+                              alert('Email Already Used')
+                          }
+                        }
+                        else if(data[0] === 400)
+                        {
+                            alert(data[1].details)
+                        }
+                        else
+                        {
+                            alert('Internal Server Error')
+                        }
+            }
+            ).catch(err => {
+                // Do something for an error here
+                console.log("Error Reading data " + err);
+                alert('Internal Server Error')
+              });
                 }
             }
-            );
-                       
-                      }
-                }
-
     render() { 
         return ( 
             <div>
@@ -235,6 +244,10 @@ class SignUp1 extends Component {
                               pattern="^[0-9]{10}$"
                              title="Enter valid Mobile number" required/></td>
                         </tr>
+                        <tr>
+                             <td></td>
+                             <td className="handlingerror">{this.state.phoneError}</td>
+                         </tr>
                         </tbody>
                         </table>
                         <button type="submit" >Submit</button>
