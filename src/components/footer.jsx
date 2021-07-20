@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './footer.css';
-import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 
 
@@ -36,10 +36,11 @@ class Footer extends Component {
                 <h4>Follow us:</h4>
                 <ul style={{listStyleType:"none"}}>
                   <li className="follow-list"><a href="https://www.facebook.com/SlopeRateInc
-"><FaFacebook /></a></li>
+" className="follow-fb"><FaFacebook /></a></li>
 {/*  eslint-disable-next-line */}
-                  <li className="follow-list"><a href="#"><FaInstagram/></a></li>
-                  <li className="follow-list"><a href="https://www.linkedin.com/company/slope-rate-tech-private-limited"><FaLinkedinIn/></a></li>
+                  <li className="follow-list"><a href="#"  className="follow-insta"><FaInstagram/></a></li>
+                  <li className="follow-list"><a href="https://www.linkedin.com/company/slope-rate-tech-private-limited"  className="follow-lin"><FaLinkedinIn/></a></li>
+                  <li className="follow-list"><a href="https://twitter.com/SlopeRateTechno" className="follow-twi"><FaTwitter/></a></li>
                 </ul>
           </div>
           <div  className = "footer-col">
@@ -77,7 +78,7 @@ class Footer extends Component {
 </div>
 <div className="footer-copy">
 {/* eslint-disable-next-line */}
-<p>Copyright ©️ 2020 Slope Rate Techno Private Limited - All Rights Reserved.</p>
+<p>Copyright ©️ 2021 Slope Rate Techno Private Limited - All Rights Reserved.</p>
 </div>
       </div>
     );
