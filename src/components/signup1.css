@@ -63,6 +63,7 @@ table tr td .lablestyle
     outline: none;  
     margin-top: 15px;
     /* margin-left: 10px; */
+    background-color: white;
 }
 .signup1container button
 {
@@ -96,6 +97,7 @@ table tr td .lablestyle
     border-radius: 8px;
     border: 1px solid crimson;
     outline: none; 
+    background-color: white;
 
 }
 .signuppara a

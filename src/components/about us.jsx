@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./aboutus.css";
+import NavBar from "./navbar";
 
 class AboutUs extends Component {
   state = {};
@@ -7,6 +8,7 @@ class AboutUs extends Component {
     return (
       <React.Fragment>
         <div>
+          <NavBar/>
           <div className = "aboutus">
             <h2>About us</h2>
           </div>

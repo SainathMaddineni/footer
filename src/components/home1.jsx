@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './home1.css';
+import NavBar from "./navbar"
 class Home1 extends Component {
     state = {  }
     render() { 
         return (
             <div>
+                <NavBar/>
                 <div className="home1container">
                     
 
