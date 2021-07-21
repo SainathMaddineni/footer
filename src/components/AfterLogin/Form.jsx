@@ -11,11 +11,11 @@ function LoginIntegration() {
     return ( 
         <form onSubmit={handleSubmit(onSubmit)}>
         <Box   bgGradient="linear(red.100 0%, orange.100 25%, yellow.100 50%)">
-        <Box marginLeft="40%" width="350px" >
+        <Box width="300px" maxW="lg" mx="auto" > 
             <br />
             <br />
-            <br />
-        <FormControl height="80vh">
+            <br />    
+        <FormControl height="80vh">     
             <FormLabel><strong>Quote Of The Project :</strong></FormLabel>
             <Select placeholder="Select" borderColor="black" {...register("project quote",{required:true})}>
                 <option>Web</option>
@@ -29,9 +29,10 @@ function LoginIntegration() {
                 <option>Large</option>
             </Select><br/>
             <FormLabel><strong>Email or Phone Number : </strong></FormLabel>
-            <Input {...register("email or phone",{required:true})} placeholder="Enter Email or Phone" borderColor="black" _placeholder={{color:"black"}} /><br /><br />
+            <Input {...register("email or phone",{required:true})} placeholder="Enter Email or Phone" 
+            borderColor="black" _placeholder={{color:"black"}} /><br /><br />
             <FormLabel><strong>Vender Ship :</strong> </FormLabel>
-                    <FormLabel border="1.5px solid black" borderRadius="10px" width="350px">
+                    <FormLabel border="1.5px solid black" borderRadius="10px" width="300px">
                     <label htmlFor="file"> 
                     <AddIcon color="white" border="1px solid white" borderRadius="70%" padding="8px" 
                     backgroundColor="red" boxSize="40px" cursor="pointer" /> Choose a File... 
