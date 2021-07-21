@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './mlogin.css';
-import Service from './service'
+// import Service from './service'
+import NavBar from './navbar';
+// import Navbar from './AfterLogin/Navbar';
+import LoginIntro from './AfterLogin/LoginIntro';
+
 const UsernameRE = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
 // const PasswordRE = new RegExp(/^[0-9]{9,25}$/);
 
@@ -82,7 +86,7 @@ class Mlogin extends Component {
                                 text:data[1].registerResponse
                             }))
                               alert('Login Successfully')
-                              this.props.history.push("/service");
+                              this.props.history.push("/LoginIntro");
                           }
                           else if(data[1].registerResponse === null){
                               alert('Invalid Username')
@@ -108,8 +112,11 @@ class Mlogin extends Component {
         }          
     render() { 
         return ( 
-            <div>{
-                !this.state.login?
+            <div>
+                {
+                !this.state.login? 
+                <div>
+                    <NavBar/>
         <div style={{
                 backgroundImage: "url(/images/bg-01.jpg)",
                 height: "100vh",
@@ -152,10 +159,11 @@ class Mlogin extends Component {
         </div> 
     </form>     
 </div>
-</div>  
+</div> 
+</div> 
  :
  <div>
-     <Service/>
+     <LoginIntro/>
  </div>
 } 
             </div>

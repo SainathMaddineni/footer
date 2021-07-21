@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import "./services.css";
+import NavBar from "./navbar";
 
 class Services extends Component {
   state = {};
   render() {
     return (
+      <div>
+        <NavBar/>
       <div className="servicebox">
         <div className="serives">
           <h2>Our Services</h2>
@@ -91,6 +94,7 @@ class Services extends Component {
             </dialog>
           </div>
         </div>
+      </div>
       </div>
     );
   }

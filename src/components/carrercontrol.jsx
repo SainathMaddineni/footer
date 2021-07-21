@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./carrercontrol.css";
+import NavBar from './navbar';
 
 // const initialCarrerControl=
 // {
@@ -111,6 +112,7 @@ class CarrerControl  extends Component {
     render() { 
         return ( 
             <div>
+                <NavBar/>
                 <div className="admin">
                 <img src = "/images/banner.png" alt = "img not found"/>
                 <div className="admincontainer">
