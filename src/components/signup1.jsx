@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import "./signup1.css";
-import NavBar from './navbar';
-
 const mobileRe = new RegExp(/^[0-9]{10}$/);
 class SignUp1 extends Component {
     state = { 
@@ -129,57 +127,56 @@ class SignUp1 extends Component {
     render() { 
         return ( 
             <div>
-                <NavBar/>
                 <div className="signup1container">
                 <form  onSubmit = {(event)=>this.handleSubmit1(event)} >
                      <div className="signup1form">
 
 
                     <div className="signupheading"><h1>Registration</h1></div>
-                        <table><thead></thead>
-                        <tbody>
-                            <tr> 
+                        <div>
+                        <div>
+                            <div className="rsignup-row"> 
 
-                                <td><label className="lablestyle">First Name  </label></td>
-                                <td><input type="text" className="signupin" 
+                                <div><label className="lablestyle">First Name  </label></div>
+                                  <div><input type="text" className="signupin" 
                                 placeholder="Enter the First name"
                                 pattern="^[a-zA-Z]+$" 
                                 value={this.state.firstname}
                                 onChange = {(event) => this.setState({firstname : event.target.value})}
                                 title="Spaces are not allowed" 
-                                required /></td>
-                            </tr>
-                            <tr>
-                                <td><label className="lablestyle">Last Name  </label></td>
-                                <td><input type="text" className="signupin" 
+                                required /></div>
+                            </div><br></br>
+                            <div className="rsignup-row">
+                                <div><label className="lablestyle">Last Name  </label></div>
+                                <div><input type="text" className="signupin" 
                                 placeholder="Enter the Last name" 
                                 value={this.state.lastname}
                                 onChange = {(event) => this.setState({lastname : event.target.value})}
                                 pattern="^[a-zA-Z]+$" 
-                                title="Spaces are not allowed" required /></td>
-                            </tr>
-                            <tr>
-                                <td><label className="lablestyle">Address  </label></td>
-                                <td><textarea name="" id="" cols="10" rows="3" 
+                                title="Spaces are not allowed" required /></div>
+                            </div><br></br>
+                            <div className="rsignup-row">
+                                <div><label className="lablestyle">Address  </label></div>
+                                <div><textarea name="" id="" cols="22" rows="3" className="signupin-add"
                                 placeholder="Enter the Address"
                                 value={this.state.address}
                                 onChange = {(event) => this.setState({address : event.target.value})}
-                                 required></textarea></td>
-                            </tr>
+                                 required></textarea></div>
+                            </div><br></br>
 
-                            <tr>
-                              <td><label className="pincodelable lablestyle">Pincode  </label></td>
-                              <td><input type="text" className="picode signupin" 
+                            <div className="rsignup-row">
+                              <div><label className="pincodelable lablestyle">Pincode  </label></div>
+                              <div><input type="text" className="picode signupin" 
                                placeholder="Enter the Zip code"
                                pattern="[0-9]{6}"
                                value={this.state.pincode}
                                onChange = {(event) => this.setState({pincode : event.target.value})}
-                               title="Enter Valid Pin Code" required /></td>
-                            </tr>
+                               title="Enter Valid Pin Code" required /></div>
+                            </div><br></br>
 
-                            <tr>
-                             <td><label className="lablestyle">Country  </label></td>
-                             <td> <select className="country" 
+                            <div className="rsignup-row">
+                             <div><label className="lablestyle">Country  </label></div>
+                             <div> <select className="country" 
                              value={this.state.country}
                              onChange = {(event) => this.setState({country : event.target.value})}
                                  >
@@ -190,71 +187,70 @@ class SignUp1 extends Component {
 
 
                           </select>
-                          </td>
-                            </tr>
+                          </div>
+                            </div><br></br>
 
-                           <tr>
-                             <td><label className="lablestyle">Email  </label></td>
+                            <div className="rsignup-row">
+                             <div><label className="lablestyle">Email  </label></div>
 
-                             <td ><input type="email" className="signupin" 
+                             <div><input type="email" className="signupin" 
                              placeholder="abc@example.com"
                               value={this.state.mail || ''}
                              onChange = {(event) => this.setState({mail : event.target.value})}
-                              title="invalid email" required/></td>
-                           </tr>
+                              title="invalid email" required/></div>
+                           </div><br></br>
 
-                           <tr>
-                            <td><label className="lablestyle">Password  </label></td>
+                           <div className="rsignup-row">
+                            <div><label className="lablestyle">Password  </label></div>
 
-                            <td><input type="password" className="signupin" 
+                            <div><input type="password" className="signupin" 
                             placeholder="Enter the Password" 
                             pattern="^[0-9]{9,25}$" 
                             value={this.state.password}
                                 onChange = {(event) => this.setState({password : event.target.value})}
-                            title="only numbers and length should be (9-25)" required /></td>
-                         </tr>
+                            title="only numbers and length should be (9-25)" required /></div>
+                         </div><br></br>
 
-                          <tr>
-                           <td><label className="lablestyle">Confirm Password </label></td>
+                         <div className="rsignup-row">
+                           <div><label className="lablestyle">Confirm Password </label></div>
 
-                           <td><input type="password" className="signupin" 
+                           <div><input type="password" className="signupin" 
                            placeholder="Enter the Password"
                             pattern="^[0-9]{9,25}$" 
                             value={this.state.confirmpassword}
                             onChange = {this.handleconfirmpassword}
 
 
-                            title="Both passwords Should Match" required/></td>
-                         </tr>
-                         <tr>
-                             <td></td>
-                             <td className="handlingerror">{this.state.confirmpasswordError}</td>
-                         </tr>
+                            title="Both passwords Should Match" required/></div>
+                         </div><br></br>
+                         <div className="rsignup-row"></div>
+                             <div className="handlingerror">{this.state.confirmpasswordError}</div>
+                         </div>
 
-                         <tr>
-                           <td><label className="lablestyle">Phone Number  </label></td>
+                         <div className="rsignup-row">
+                           <div><label className="lablestyle">Phone Number  </label></div>
 
-                           <td><select name="phonenumber"  className="signuppn" >
+                           <div>
+                               <div className="country-code"><select name="phonenumber"  className="signuppn" >
                                <option defaultValue="+91">+91</option>
                                <option value="+1">+1</option>
                                <option value="+61">+61</option>
                                <option value="+1">+1</option>
-                               </select> {""} {""} 
-                           <input type="number" className="phoneinput signupin"
+                               </select> {""} {""} </div>
+                           <div><input type="number" className="phoneinput signupin"
                             placeholder="Enter the mobile number"
                             value={this.state.phonenumber || ''}
                                 onChange = {this.handlephonenumber}
                               pattern="^[0-9]{10}$"
-                             title="Enter valid Mobile number" required/></td>
-                        </tr>
-                        <tr>
-                             <td></td>
-                             <td className="handlingerror">{this.state.phoneError}</td>
-                         </tr>
-                        </tbody>
-                        </table>
+                             title="Enter valid Mobile number" required/></div></div>
+                        </div>
+                        <div className="rsignup-row"></div>
+                             <div className="handlingerror">{this.state.phoneError}</div>
+                         </div>
+                        <div >
                         <button type="submit" >Submit</button>
                         <p className="signuppara">Already have a account ? <a href="/login">Login</a></p>
+                    </div>
                     </div>
                     </form>
                 </div>
@@ -262,5 +258,5 @@ class SignUp1 extends Component {
          );
     }
 }
-
 export default SignUp1;
+ 
