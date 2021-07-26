@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: enter;
 }
 
@@ -46,11 +46,11 @@ body{
 }
 header{
   /* width:auto; */
-  background-color: #6087bb;
+  /* background-color: #6087bb;
   color:#ffffff;
-  padding-top:30px;
+  padding-top:30px; */
   /* min-height:70px; */
-  border-bottom:#e8491d 3px solid;
+  /* border-bottom:#e8491d 3px solid;
   padding-bottom: 30px;
 
   }
@@ -62,9 +62,9 @@ header{
     text-decoration: none;
     color: yellow;
   }
-header :link{
+header :link{ */
   /* float:right; */
-  padding: 10px;
+  /* padding: 10px;
   display:inline;
   text-align: center;
   width:110px;
@@ -77,17 +77,17 @@ header :link{
   }
   #branding{
     float:left; 
-    margin-left:15px;
+    margin-left:15px; */
     /* text-align: left; */
     /* width: 100%; */
-  }
+  /* }
   header #branding h1{
     margin:0;
     
     }
     header nav {
       /* float:right; */
-      margin-top:10px;
+      /* margin-top:10px;
     }
   header .highlight, header .current a{
     color:#e8491d;
@@ -110,7 +110,7 @@ header :link{
   ul{
     margin:0;
     padding:0;
-  }
+  }  */
   
   .container1{
     width:100%;

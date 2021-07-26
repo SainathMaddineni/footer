@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./services.css";
-import NavBar from "./navbar";
+import Nav from "./newnav";
 
 class Services extends Component {
   state = {};
   render() {
     return (
       <div>
-        <NavBar/>
+        <Nav/>
       <div className="servicebox">
         <div className="serives">
           <h2>Our Services</h2>

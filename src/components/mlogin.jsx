@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './mlogin.css';
 // import Service from './service'
-import NavBar from './navbar';
+import Nav from './newnav';
 // import Navbar from './AfterLogin/Navbar';
 import LoginIntro from './AfterLogin/LoginIntro';
 
@@ -116,7 +116,7 @@ class Mlogin extends Component {
                 {
                 !this.state.login? 
                 <div>
-                    <NavBar/>
+                    <Nav/>
         <div style={{
                 backgroundImage: "url(/images/bg-01.jpg)",
                 height: "100vh",
