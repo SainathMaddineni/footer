@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './home1.css';
-import NavBar from "./navbar"
+import Nav from "./newnav"
 class Home1 extends Component {
     state = {  }
     render() { 
         return (
             <div>
-                <NavBar/>
+                <Nav/>
                 <div className="home1container">
                     
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './forgetpassword.css';
+import Nav from './newnav';
 import axios from 'axios';
 import qs from 'qs';
 const EmailCheck = new RegExp(/^[\w-+]+(\.[\w]+)*@[\w-]+(\.[\w]+)*(\.[a-z]{2,})$/);
@@ -47,6 +48,7 @@ class ForgetPassword extends Component {
     render() { 
         return (
             <div>
+                <Nav/>
                 <div className = "forgetpassword">
                     <h1>Please Enter Your Email We Will Send A Temperary Password To Your Mail</h1>
                 <div className = "forgetform">
