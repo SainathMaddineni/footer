@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./signup1.css";
+import NavBar from './navbar';
 const mobileRe = new RegExp(/^[0-9]{10}$/);
 class SignUp1 extends Component {
     state = { 
@@ -127,6 +128,7 @@ class SignUp1 extends Component {
     render() { 
         return ( 
             <div>
+                <NavBar/>
                 <div className="signup1container">
                 <form  onSubmit = {(event)=>this.handleSubmit1(event)} >
                      <div className="signup1form">
@@ -259,4 +261,3 @@ class SignUp1 extends Component {
     }
 }
 export default SignUp1;
- 
