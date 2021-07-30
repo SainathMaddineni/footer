@@ -124,18 +124,18 @@
 @media only screen and (max-width: 950px) {
   .footer-main .footer-col {
      width: 30%;
-     margin-left: 10%
+     /* margin-left: 10% */
    }
  }
 @media only screen and (max-width: 500px) {
   .footer-main .footer-col {
      width: 100%;
-     margin-left: 20%
+     /* margin-left: 20% */
    }
  }
 @media only screen and (max-width: 340px) {
  .footer-main .footer-col {
     width: 100%;
-    margin-left: 20%
+    /* margin-left: 20% */
   }
 }
